@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emergent-social-sim"
+version = "0.1.0"
+description = "A configurable LangGraph simulation for emergent cooperation among LLM agents."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "langgraph>=0.2.0",
+  "networkx>=3.3",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.3",
+  "tomli>=2.0.1; python_version < '3.11'",
+  "litellm>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+emergent-social-sim = "emergent_social_sim.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

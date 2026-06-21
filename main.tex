@@ -1,0 +1,750 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{makecell}
+\title{Strategic Adaptation of LLM Agents in Iterated Prisoner's Dilemma Tournaments}
+\author{Safa Eren Kuday}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This project studies strategic behavior in an Iterated Prisoner’s Dilemma tournament between rule-based strategies and large language model agents. We compare a baseline payoff-maximization setting with perceived reputation, perceived starvation/elimination, and LLM-only pre-game communication conditions. In the reputation and starvation settings, the underlying game mechanics remain unchanged; only the prompt framing changes. The results show that LLM agents are sensitive to these descriptions: perceived reputation increases conditional cooperation, perceived starvation produces the strongest shift toward cooperation, and communication can support cooperation but remains unstable due to message quality and model randomness.
+\end{abstract}
+
+\section{Introduction}
+
+The Prisoner's Dilemma is a classical model of the tension between individual incentives and mutually beneficial cooperation. In the one-shot version, defection is individually rational, since each player receives a higher payoff by defecting regardless of the opponent's action. However, in repeated interactions, defection can lead to lower long-term returns because it may trigger retaliation, destroy trust, or prevent stable cooperation.
+
+This project investigates whether LLM agents exhibit strategic adaptation in an Iterated Prisoner's Dilemma tournament. In particular, we study whether LLM agents change their behavior when the same payoff structure is embedded in different strategic environments. The experiment compares a baseline IPD setting with a reputation setting, where agents are told that past behavior may be visible to future opponents, and a starvation/elimination setting, where agents are told that low-scoring players may disappear from the future opponent pool. A fourth LLM-only condition adds a single pre-game communication message to test whether language-based coordination can stabilize cooperation.
+
+The central question is whether LLM agents respond only to the numerical payoff matrix, or whether they also reason about reputation, survival, future partner quality, and communication. In other words, we ask whether LLM agents treat repeated interaction as a purely numerical optimization problem, or whether they use richer strategic context to decide when to cooperate, punish, repair trust, or exploit.
+
+
+\section{Related Work}
+
+The Iterated Prisoner's Dilemma has a long history as a model for studying cooperation, reciprocity, and the emergence of stable strategies. Axelrod's tournaments showed that simple reciprocal strategies such as Tit-for-Tat can perform strongly in repeated settings \cite{axelrod1984evolution}. Kreps, Milgrom, Roberts, and Wilson showed that reputation effects can support cooperation even in finitely repeated Prisoner's Dilemma games under incomplete information \cite{kreps1982rational}.
+
+Recent work has started to study LLMs as strategic agents. Akata et al. study LLMs in repeated games and show that models exhibit persistent behavioral signatures in environments such as the Iterated Prisoner's Dilemma \cite{akata2023playing}. Pal et al. analyze cooperation and defection strategies in five LLMs, varying payoff values, continuation probability, known or unknown last rounds, and framing \cite{pal2026strategies}. MoralSim studies LLM behavior in morally charged Prisoner's Dilemma and Public Goods Game settings, showing that framing and survival risks can affect LLM decisions \cite{backmann2025ethics}. Chupilkin studies LLMs in repeated strategic games and reports systematic effects of multipolarity, finite horizons, and communication \cite{chupilkin2026strategic}.
+
+\section{Game-Theoretic Background}
+
+\subsection{The Prisoner's Dilemma}
+
+In each round, two agents independently choose either cooperate, denoted by $C$, or defect, denoted by $D$. The payoff values used in this project are:
+
+\[
+T = 5, \quad R = 3, \quad P = 1, \quad S = 0.
+\]
+
+Here, $T$ is the temptation payoff from defecting against a cooperator, $R$ is the reward for mutual cooperation, $P$ is the punishment for mutual defection, and $S$ is the sucker's payoff from cooperating against a defector. These values satisfy the standard Prisoner's Dilemma ordering:
+
+\[
+T > R > P > S.
+\]
+
+Thus, in a single round, defection strictly dominates cooperation. For any opponent action $a_j \in \{C,D\}$, we have:
+
+\[
+u_i(D,a_j) > u_i(C,a_j).
+\]
+
+Therefore, the unique one-shot Nash equilibrium is mutual defection $(D,D)$, even though mutual cooperation $(C,C)$ gives both players a higher payoff.
+
+
+
+\subsection{Strategy Pools and Opponent Dependence}
+
+In a tournament with multiple strategies, there is no single strategy that is optimal against every possible opponent. The expected utility of a policy $\pi$ depends on the population of opponents $\mathcal{P}$:
+
+\[
+U(\pi \mid \mathcal{P}) = \sum_{\sigma \in \mathcal{P}} w_{\sigma} U(\pi,\sigma).
+\]
+
+Here, $\sigma$ is an opponent strategy and $w_{\sigma}$ is its frequency in the population. Therefore, the best response is population-dependent:
+
+\[
+\pi^* = \arg\max_{\pi} U(\pi \mid \mathcal{P}).
+\]
+
+Always defecting is highly effective against unconditional cooperators, and it cannot be exploited by unconditional defectors. However, it performs poorly against reciprocal strategies such as Tit-for-Tat, Forgiving Tit-for-Tat, or Tit-for-Two-Tats, because early defection can trigger long mutual-defection spirals. Conversely, highly cooperative strategies can perform well in a population of reciprocal agents but are vulnerable to exploitation by unconditional defectors or manipulative strategies.
+
+\subsection{Finite Repetition and Backward Induction}
+
+If the number of rounds $N$ is commonly known, then a fully rational selfish agent defects in the final round, since no future retaliation is possible. If both agents know this, then the second-to-last round also has no strategic reason for cooperation, because the final round is already expected to be mutual defection. By backward induction, this logic recursively extends to every round:
+
+\[
+a_N = D \Rightarrow a_{N-1} = D \Rightarrow \cdots \Rightarrow a_1 = D.
+\]
+
+Thus, for a finitely repeated Prisoner's Dilemma with a known horizon and common knowledge of rationality, the standard prediction is defection in all rounds.
+
+However, this theoretical prediction is mainly used here as a contrast. In our experiment, agents were not explicitly told the total number of rounds. Moreover, both LLMs and heuristic bots often followed reciprocal or adaptive rules rather than pure backward induction. For example, Tit-for-Tat begins with cooperation and then mirrors the opponent's previous move, allowing cooperation to emerge when both players are responsive and future interaction is valuable. Some LLM agents, especially Claude Sonnet 4.6, still attempted to infer a possible final or near-final round, often around round 10, and defected opportunistically at those points. However, they generally did not apply the full recursive backward-induction logic that would imply defection from the first round onward.
+
+
+
+
+\section{Experimental Setup}
+
+\subsection{Tournament Format}
+
+The tournament was implemented as a round-robin Iterated Prisoner's Dilemma. Each of the 11 agents played against every other agent. Each match consisted of 20 rounds. In every round, each agent independently selected either cooperate or defect. Agents observed only their own match history with the current opponent.
+
+\subsection{Participating Agents}
+
+The tournament contained 7 deterministic or heuristic bots and 4 LLM agents.
+
+\subsubsection{Rule-Based Bots}
+
+\begin{itemize}
+\item \textbf{AlwaysCoopBot}: always cooperates.
+\item \textbf{AlwaysDefectBot}: always defects.
+\item \textbf{TitForTatBot}: cooperates first, then copies the opponent's previous move.
+\item \textbf{ForgivingTFT}: similar to Tit-for-Tat, but occasionally forgives defections.
+\item \textbf{ManipulativeTFT}: cooperates initially, but defects periodically to exploit cooperative opponents.
+\item \textbf{TitForTwoTats}: defects only after two consecutive opponent defections.
+\item \textbf{RandomBot}: cooperates or defects with equal probability.
+\end{itemize}
+
+\subsubsection{LLM Agents}
+
+The four LLM agents were accessed via LiteLLM and required structured outputs through the function call \texttt{submit\_choice(choice, reasoning)}.
+
+The models were:
+
+\begin{itemize}
+\item \textbf{GPT-5.4-Mini}: a small OpenAI model used as a lightweight LLM agent.
+\item \textbf{GPT-5.5}: a larger OpenAI model used to test stronger reasoning behavior.
+\item \textbf{Gemini 3.5 Flash}: a fast Gemini model used as a second non-OpenAI LLM agent.
+\item \textbf{Claude Sonnet 4.6}: an Anthropic model used as another strong reasoning-oriented LLM agent.
+\end{itemize}
+
+\subsection{Prompt Conditions}
+
+We compare four prompt conditions.
+
+\paragraph{Scenario A: Baseline.}
+LLMs are instructed only to maximize their own cumulative score across all rounds.
+
+\paragraph{Scenario B: Perceived Reputation.}
+LLMs are additionally told that their choice history may be visible to future agents. This mechanism was not actually implemented, so this condition measures a perceived reputation effect rather than real reputation.
+
+\paragraph{Scenario C: Perceived Starvation/Elimination.}
+LLMs are additionally told that low-scoring agents may be eliminated from future games. This may make agents reason both defensively, by avoiding a low cumulative score themselves, and socially, by trying to preserve cooperative agents in the future opponent pool. The elimination mechanism was only described in the prompt rather than implemented, so this condition measures a perceived survival/elimination framing effect.
+
+\paragraph{Scenario D: Pre-Game Communication (LLM-Only).}
+LLM agents are permitted to exchange a single pre-game message (maximum 100 characters) before the first round. The received message is injected into the opponent's prompt history, allowing models to coordinate, make promises, or negotiate. Because rule-based bots lack language capabilities, this condition was run on a sub-pool containing only the four LLM agents.
+
+\section{Results}
+
+\subsection{Scenario A: Baseline IPD}
+
+In the baseline condition, LLM behavior varied substantially. Except for GPT-5.4-Mini, which behaved as a near-pure defector, the LLM agents outperformed most rule-based bots. Their advantage appears to come from strategic flexibility: they sustained cooperation with reliable opponents, attempted repair through cooperative ``olive branches'' after conflict, and exploited opponents that appeared unlikely to retaliate. Claude Sonnet 4.6 achieved the highest score while cooperating only 41\% of the time, indicating a selective and opportunistic strategy rather than unconditional cooperation. Gemini 3.5 Flash and GPT-5.5 maintained higher cooperation rates, suggesting more cooperation-preserving reciprocal behavior.
+
+\begin{table}[H]
+\centering
+\caption{Scenario A: Baseline IPD standings.}
+\small
+\begin{tabular}{rllccc}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ClaudeSonnet4\_6 & LLM & 490 & 2.45 & 41.0\% \\
+2 & Gemini35Flash & LLM & 480 & 2.40 & 65.5\% \\
+3 & GPT55 & LLM & 465 & 2.33 & 64.0\% \\
+4 & TitForTatBot & Bot & 463 & 2.31 & 66.5\% \\
+5 & ManipulativeTFT & Bot & 452 & 2.26 & 36.0\% \\
+6 & TitForTwoTats & Bot & 450 & 2.25 & 73.5\% \\
+7 & ForgivingTFT & Bot & 444 & 2.22 & 77.0\% \\
+8 & AlwaysCoopBot & Bot & 387 & 1.94 & 100.0\% \\
+9 & GPT54Mini & LLM & 382 & 1.91 & 1.0\% \\
+10 & AlwaysDefectBot & Bot & 372 & 1.86 & 0.0\% \\
+11 & RandomBot & Bot & 349 & 1.75 & 42.5\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+Among the rule-based bots, TitForTatBot was the strongest baseline performer. This fits the mixed opponent pool: Tit-for-Tat cooperates with cooperative agents, but immediately punishes defection and therefore limits repeated exploitation. More forgiving strategies sometimes restored cooperation, but in the baseline pool forgiveness could also be exploited by opportunistic opponents. AlwaysCoopBot was too vulnerable to exploitation, while AlwaysDefectBot often became trapped in low-payoff mutual defection after opponents retaliated. Overall, the baseline results show that performance in IPD is strongly opponent-pool dependent.
+
+Detailed pairwise and subgroup results are reported in Appendix~\ref{app:baseline_details}.
+
+
+
+\subsection{Scenario B: Perceived Reputation}
+
+\begin{table}[H]
+\centering
+\caption{Scenario B: perceived reputation standings.}
+\small
+\begin{tabular}{rllccc}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ForgivingTFT & Bot & 502 & 2.51 & 85.0\% \\
+2 & TitForTatBot & Bot & 499 & 2.50 & 75.0\% \\
+3 & TitForTwoTats & Bot & 494 & 2.47 & 84.0\% \\
+4 & ClaudeSonnet4\_6 & LLM & 490 & 2.45 & 45.0\% \\
+5 & GPT54Mini & LLM & 474 & 2.37 & 39.0\% \\
+6 & GPT55 & LLM & 471 & 2.35 & 66.0\% \\
+7 & Gemini35Flash & LLM & 457 & 2.29 & 62.0\% \\
+8 & ManipulativeTFT & Bot & 454 & 2.27 & 37.5\% \\
+9 & AlwaysCoopBot & Bot & 408 & 2.04 & 100.0\% \\
+10 & AlwaysDefectBot & Bot & 380 & 1.90 & 0.0\% \\
+11 & RandomBot & Bot & 350 & 1.75 & 44.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The reputation setting increased conditional cooperation among most LLM agents, with the exception of Gemini 3.5 Flash, whose cooperation rate slightly decreased. The clearest change was GPT-5.4-Mini, whose cooperation rate rose from 1.0\% to 39.0\%. This suggests that visible choice history made cooperation more strategically attractive, especially for a model that was highly exploitative in the baseline condition. Maintaining a cooperative reputation helped agents avoid immediate retaliation and reduced the risk of becoming trapped in inefficient defect-defect dynamics.
+
+The more cooperative LLM behavior also improved the broader tournament environment. In the Prisoner's Dilemma, a more cooperative opponent increases the attainable payoff for any fixed action: mutual cooperation is better than mutual defection, and exploiting a cooperator is better than defecting against a defector. As the LLM agents cooperated more, many other agents also scored higher. The largest gains, however, went to reciprocal bots with punishment mechanisms, such as ForgivingTFT, TitForTatBot, and TitForTwoTats. These strategies reward cooperation while discouraging exploitation, so they benefit strongly when opponents become more cooperative but remain strategically cautious.
+
+ForgivingTFT became the top-ranked bot in this setting. In the baseline condition, TitForTatBot's immediate retaliation was useful in a more exploitative environment. Under reputation, however, LLMs were more willing to restore cooperation after conflict, making ForgivingTFT's olive-branch mechanism more valuable. It could punish defection, but also allow agents to return to mutual cooperation instead of remaining in a retaliation cycle.
+
+Detailed pairwise and subgroup results are reported in Appendix~\ref{app:reputation_details}.
+
+
+\subsection{Scenario C: Perceived Starvation/Elimination}
+
+\begin{table}[H]
+\centering
+\caption{Scenario C: perceived starvation/elimination standings.}
+\small
+\begin{tabular}{rllccc}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & Gemini35Flash & LLM & 534 & 2.67 & 80.0\% \\
+2 & GPT54Mini & LLM & 528 & 2.64 & 74.0\% \\
+3 & ClaudeSonnet4\_6 & LLM & 527 & 2.63 & 75.0\% \\
+4 & GPT55 & LLM & 526 & 2.63 & 75.5\% \\
+5 & ForgivingTFT & Bot & 520 & 2.60 & 87.0\% \\
+6 & TitForTatBot & Bot & 517 & 2.58 & 80.0\% \\
+7 & TitForTwoTats & Bot & 511 & 2.56 & 87.5\% \\
+8 & AlwaysCoopBot & Bot & 495 & 2.48 & 100.0\% \\
+9 & ManipulativeTFT & Bot & 467 & 2.33 & 38.5\% \\
+10 & AlwaysDefectBot & Bot & 392 & 1.96 & 0.0\% \\
+11 & RandomBot & Bot & 380 & 1.90 & 51.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The starvation/elimination setting produced the strongest shift toward cooperation. All four LLM agents ranked in the top four, with cooperation rates between 74\% and 80\%. This behavior appears to be driven not only by concern about low cumulative scores, but also by the idea that losing cooperative agents would make future interactions worse by leaving a more defect-heavy opponent pool. In other words, the LLMs often treated cooperative opponents as valuable future partners. This reasoning worked well in the given tournament pool, where many agents were willing to sustain cooperation if the LLMs did not defect first.
+
+As in the reputation setting, more cooperative LLM behavior raised scores across the tournament. Appendix Tables~\ref{tab:starvation_subgroup_llm_only} and~\ref{tab:starvation_subgroup_llm_cooperative} show that the LLM-only pool and the cooperative/naive pool reached full cooperation. Even AlwaysCoopBot received a large boost, because it was no longer exploited as heavily by the LLM agents. However, the LLMs still outperformed the cooperative bots because they were not purely cooperative. As shown in Appendix Table~\ref{tab:starvation_subgroup_llm_exploitative}, the exploitative and non-cooperative subgroup still required defensive adaptation. The LLM agents could maintain cooperation with safe partners while switching to defection against exploitative or unpredictable opponents such as ManipulativeTFT, AlwaysDefectBot, and RandomBot.
+
+ForgivingTFT was again the strongest rule-based bot in this more cooperative environment. Its success suggests that when agents are generally willing to cooperate, forgiveness becomes more useful than strict retaliation. The olive-branch mechanism helped restore cooperation after occasional defections, while still preserving enough punishment to discourage repeated exploitation.
+
+Detailed pairwise and subgroup results are reported in Appendix~\ref{app:starvation_details}.
+
+
+\subsection{Scenario D: Pre-Game Communication (LLM-Only)}
+
+Scenario D tests whether a single pre-game message can help LLM agents coordinate before the first round. Because rule-based bots cannot process language, this condition was restricted to the four LLM agents and is therefore not directly comparable to the full 11-agent tournaments. We ran the communication tournament three times to test stability, resetting the match cache between runs.
+
+Table~\ref{tab:comm_combined_standings} presents the tournament standings across the three communication runs. Detailed pairwise match matrices are reported in Appendix~\ref{app:communication_details}.
+
+\begin{table}[H]
+\centering
+\caption{Scenario D: Pre-Game Communication standings across runs.}
+\label{tab:comm_combined_standings}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\toprule
+ & \multicolumn{3}{c}{Run 1 } & \multicolumn{3}{c}{Run 2 } & \multicolumn{3}{c}{Run 3 } \\
+\cmidrule(r){2-4} \cmidrule(lr){5-7} \cmidrule(l){8-10}
+Agent ID & Rank & Score & Coop Rate & Rank & Score & Coop Rate & Rank & Score & Coop Rate \\
+\midrule
+ClaudeSonnet4\_6 & 2 & 171 & 75.0\% & 1 & 148 & 63.3\% & 2 & 153 & 61.7\% \\
+Gemini35Flash    & 4 & 120 & 53.3\% & 2 & 125 & 51.7\% & 1 & 167 & 81.7\% \\
+GPT54Mini        & 3 & 134 & 63.3\% & 4 & 98  & 30.0\% & 3 & 134 & 63.3\% \\
+GPT55            & 1 & 174 & 100.0\%& 3 & 120 & 53.3\% & 4 & 114 & 56.7\% \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\subsubsection{Analysis of Reasoning and Interaction Dynamics}
+
+The communication condition produced the most unstable results among the four scenarios. Communication did not simply make all LLM agents more cooperative; instead, cooperation depended on whether the pre-game message was clear, credible, and reinforced by early-round behavior. When both agents exchanged explicit cooperative commitments, communication often succeeded. Agents reasoned that mutual cooperation could create a stable 3-point-per-round relationship, while defection would risk destroying trust and triggering retaliation. This explains fully cooperative matches such as GPT-5.4-Mini against GPT-5.5 in Run 1 and GPT-5.4-Mini against Gemini in Run 3.
+
+At the aggregate level, pre-game communication increased average LLM cooperation compared with both the baseline and reputation settings. The effect was especially large for GPT-5.4-Mini and Claude Sonnet 4.6, whose cooperation rates rose substantially when they could use or receive pre-game commitments. However, the increase was less stable than in the starvation/elimination setting. Cooperation varied strongly across runs: GPT-5.5 reached 100\% cooperation in one run but dropped close to 50\% in the others, while Gemini's performance depended heavily on whether its pre-game message was clear or truncated.
+
+Communication was fragile because messages were non-binding. A cooperative message did not guarantee cooperation, and agents sometimes defected in the first round despite promising to cooperate or mirror the opponent. Once this happened, the betrayed agent often interpreted the defection as evidence that the message was unreliable, and the match quickly collapsed into mutual defection. This pattern was especially visible in GPT-5.4-Mini's failed matches: when it did not trust the opponent's signal, or when the opponent's message was incomplete, it opened with defection, gained an immediate payoff advantage, and then both agents became locked into a long defect-defect sequence.
+
+Gemini 3.5 Flash illustrates the importance of message quality. In successful cases, Gemini sent a clear message such as ``Lets cooperate,'' which allowed the other agent to interpret cooperation as a credible starting point. In failed cases, Gemini's message was truncated or vague, such as ``In a multi-round'' or ``Lets,'' which did not provide a clear cooperative commitment. These unclear messages were especially damaging against GPT-5.4-Mini, which was highly sensitive to whether the pre-game signal gave enough evidence of future cooperation.
+
+Claude Sonnet 4.6 shows a different limitation of communication. Claude often sent strong cooperative messages and used them to establish early cooperation, but communication did not fully remove its opportunistic tendencies. In some matches, Claude still defected after a cooperative history when it perceived a possible endgame or exploitation opportunity. Similarly, GPT-5.5 showed high variation across runs: it achieved a 100\% cooperation rate in Run 1, but its cooperation rate dropped substantially in Runs 2 and 3. Overall, pre-game communication increased cooperation on average, but it acted as a fragile trust signal rather than a guaranteed coordination mechanism.
+
+
+\section{Cross-Scenario Comparison}
+
+\begin{table}[H]
+\centering
+\caption{LLM cooperation rates across prompt conditions.}
+\label{tab:cross_scenario_coop}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Agent & Baseline & Reputation & Starvation & \makecell{Communication Avg.\\(LLM-only)} \\
+\midrule
+GPT54Mini & 1.0\% & 39.0\% & 74.0\% & 52.2\% \\
+GPT55 & 64.0\% & 66.0\% & 75.5\% & 70.0\% \\
+Gemini35Flash & 65.5\% & 62.0\% & 80.0\% & 62.2\% \\
+ClaudeSonnet4\_6 & 41.0\% & 45.0\% & 75.0\% & 66.7\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Across the first three scenarios, the payoff matrix and tournament structure remained the same, but LLM cooperation rates changed substantially. Reputation made cooperation more attractive for several models, while the starvation/elimination setting produced the strongest cooperative shift across all LLM agents. Communication also increased cooperation on average, especially for GPT-5.4-Mini and Claude, but its effect was less stable and should be interpreted separately because it was run only among LLMs.
+
+\subsubsection{Gemini 3.5 Flash}
+
+Gemini 3.5 Flash generally behaved as a cooperation-preserving reciprocal agent. In the baseline and reputation settings, it maintained cooperation with stable cooperative opponents and switched to defection against clear defectors or unreliable partners. Its main weakness was semi-cooperative manipulation: against Claude and ManipulativeTFT, Gemini attempted to repair cooperation after defections, but these repair attempts were sometimes exploited. Under perceived starvation, Gemini became more strongly cooperative, treating mutual cooperation as a way to preserve high cumulative scores and maintain a favorable future opponent pool. In the communication condition, Gemini could establish strong cooperation when its pre-game message was clear, but its occasional message truncation made coordination fragile.
+
+\subsubsection{GPT-5.4-Mini}
+
+GPT-5.4-Mini showed the largest framing effect. In the baseline condition, it behaved as a near-pure defector, which worked against naive cooperators but performed poorly against reciprocal opponents that punished early defection. Under perceived reputation, it became more conditional: it cooperated with clearly reciprocal agents but still exploited non-punishing opponents. Under perceived starvation, it shifted even further toward cooperation, maintaining stable cooperation with safe partners while still defecting against unsafe or unreliable opponents. In the communication condition, GPT-5.4-Mini was highly sensitive to the clarity of the pre-game message: explicit cooperation proposals could trigger stable cooperation, while ambiguous or truncated messages caused immediate defensive defection.
+
+\subsubsection{GPT-5.5}
+
+GPT-5.5 behaved as a conservative and forgiving reciprocal agent. It usually preserved cooperation with trustworthy opponents, punished clear defections, and then attempted to restore cooperation when possible. This made it effective against stable cooperative and reciprocal agents, but vulnerable to ManipulativeTFT, which exploited its willingness to repair. Perceived reputation strengthened its cooperative reasoning without changing its core strategy, while perceived starvation made it more explicitly focused on preserving cooperative partners for long-term survival. In the communication setting, GPT-5.5 was less stable than expected: its higher temperature likely contributed to inconsistent choices, sometimes breaking trust despite cooperative pre-game signals.
+
+\subsubsection{Claude Sonnet 4.6}
+
+Claude Sonnet 4.6 behaved as an adaptive but opportunistic reciprocal agent. In the baseline condition, it often opened with cooperation, but exploited highly forgiving or non-punishing opponents once it inferred that retaliation was unlikely. Its repeated round-10 defections suggest an endgame heuristic, where it treated the match as possibly near its end and defected to capture short-term gains. Perceived reputation changed Claude’s reasoning language more than its core strategy: it became more explicitly reputation-aware, but still exploited perceived opportunities. Under perceived starvation, however, Claude suppressed much of this opportunism and maintained cooperation with stable partners. In the communication condition, pre-game agreements supported early cooperation, but did not fully remove Claude’s tendency toward strategic endgame exploitation.
+
+
+
+
+\section{Subpopulation Analysis}
+
+Appendix Sections~\ref{app:baseline_details}--\ref{app:starvation_details} report subgroup results for LLM-only pools, cooperative/naive pools, and exploitative/non-cooperative pools. These tables show that performance in IPD is strongly opponent-pool dependent. A strategy that performs well against naive cooperators may perform poorly against reciprocal punishers, while highly cooperative strategies can succeed in cooperative pools but become vulnerable in exploitative pools.
+
+The subgroup results also clarify why overall rankings can be misleading. GPT-5.4-Mini's baseline defection strategy was profitable against non-punishing opponents but weak against reciprocal and LLM opponents. In contrast, the starvation/elimination setting produced full cooperation within cooperative subgroups, while the exploitative subgroup still required defensive adaptation. Thus, the appendix results support the main claim that LLM behavior should be evaluated not only by total score, but also by the strategic population in which the agent is placed.
+
+\section{Discussion}
+
+The results show that LLM behavior in repeated strategic games changes substantially when agents are given richer descriptions of the strategic environment. In the baseline condition, LLMs displayed diverse strategies, ranging from near-unconditional defection to stable reciprocity. Under the reputation setting, several models became more cooperative, especially GPT-5.4-Mini, suggesting that they treated visible past behavior as strategically important. Maintaining a cooperative reputation helped agents avoid inefficient defect-defect dynamics and made future cooperation more likely.
+
+The starvation/elimination setting produced the strongest cooperative shift. In this condition, LLMs did not only reason about avoiding low scores themselves; they also reasoned about the value of keeping cooperative agents in the future opponent pool. This interpretation was effective in the given tournament because many agents were willing to sustain cooperation once trust was established. The communication condition showed a related but less stable mechanism: clear cooperative messages could support coordination, but vague messages or early betrayals often led to defection spirals.
+
+Overall, the experiments suggest that LLM agents are not simple payoff-table calculators. They use the numerical payoffs, but also interpret reputation, partner quality, trust, retaliation, and communication as strategically relevant. At the same time, these behaviors are not always stable. LLMs can still be exploited by semi-cooperative opponents, overreact to ambiguous signals, or break cooperation when their own reasoning becomes opportunistic or inconsistent.
+
+\section{Limitations}
+
+Several limitations should be considered. First, the experiments use a limited set of models, payoff values, and opponent strategies, so the results may depend on the specific tournament pool. Second, the LLMs used different model settings, including different temperatures, which may have affected stability and comparability. Third, the communication condition was run only among LLM agents, so it is not directly comparable to the full 11-agent tournaments. Finally, the results should be tested across more seeds, model configurations, payoff matrices, and opponent populations.
+
+\section{Conclusion}
+
+This project studied LLM agents in an Iterated Prisoner's Dilemma tournament against classical rule-based strategies. The results suggest that LLM strategic behavior is shaped not only by payoff values, but also by how agents understand the wider strategic environment. Reputation made some models more cooperative, starvation/elimination made LLMs preserve cooperative partners more strongly, and pre-game communication allowed agents to coordinate when messages were clear and credible.
+
+Overall, LLM agents appear to be useful but delicate subjects for behavioral game-theoretic simulations. They can adapt to strategic context in rich ways, but their behavior depends on opponent composition, communication quality, model settings, and the strategic assumptions they infer from the environment.
+
+\newpage
+\begin{thebibliography}{9}
+
+\bibitem{axelrod1984evolution}
+Robert Axelrod.
+\newblock \textit{The Evolution of Cooperation}.
+\newblock Basic Books, 1984.
+
+\bibitem{kreps1982rational}
+David M. Kreps, Paul Milgrom, John Roberts, and Robert Wilson.
+\newblock Rational cooperation in the finitely repeated prisoners' dilemma.
+\newblock \textit{Journal of Economic Theory}, 27(2):245--252, 1982.
+
+\bibitem{akata2023playing}
+Elif Akata, Lion Schulz, Julian Coda-Forno, Seong Joon Oh, Matthias Bethge, and Eric Schulz.
+\newblock Playing repeated games with large language models.
+\newblock arXiv:2305.16867, 2023.
+
+\bibitem{pal2026strategies}
+Saptarshi Pal, Abhishek Mallela, Christian Hilbe, Lenz Pracher, Chiyu Wei, Feng Fu, Santiago Schnell, and Martin A. Nowak.
+\newblock Strategies of cooperation and defection in five large language models.
+\newblock arXiv:2601.09849, 2026.
+
+\bibitem{backmann2025ethics}
+Steffen Backmann, David Guzman Piedrahita, Emanuel Tewolde, Rada Mihalcea, Bernhard Schölkopf, and Zhijing Jin.
+\newblock When ethics and payoffs diverge: LLM agents in morally charged social dilemmas.
+\newblock arXiv:2505.19212, 2025.
+
+\bibitem{chupilkin2026strategic}
+Maxim Chupilkin.
+\newblock Multi-agent strategic games with LLMs.
+\newblock arXiv:2605.03604, 2026.
+
+\end{thebibliography}
+
+\appendix
+
+\clearpage
+\section{Scenario A: Baseline IPD Detailed Results}
+\label{app:baseline_details}
+
+\subsection{Pairwise Match Matrix}
+
+\begin{table}[H]
+\centering
+\caption{Baseline pairwise match matrix. Each cell reports the row agent's total points and cooperation rate against the column agent: points/cooperation rate.}
+\label{tab:baseline_pairwise_matrix}
+\begingroup
+\setlength{\tabcolsep}{1.2pt}
+\renewcommand{\arraystretch}{0.75}
+\fontsize{4.4pt}{5.0pt}\selectfont
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccccc}
+\toprule
+Agent & AC & AD & Claude & FTFT & G54 & G55 & Gemini & MTFT & Rand & TFT & T2T \\
+\midrule
+AC & -- & \shortstack{0\\100.0\%} & \shortstack{27\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{0\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{42\\100.0\%} & \shortstack{18\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+AD & \shortstack{100\\0.0\%} & -- & \shortstack{28\\0.0\%} & \shortstack{48\\0.0\%} & \shortstack{20\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{52\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{28\\0.0\%} \\
+Claude & \shortstack{82\\45.0\%} & \shortstack{18\\10.0\%} & -- & \shortstack{57\\50.0\%} & \shortstack{18\\10.0\%} & \shortstack{60\\80.0\%} & \shortstack{55\\65.0\%} & \shortstack{31\\30.0\%} & \shortstack{65\\10.0\%} & \shortstack{51\\60.0\%} & \shortstack{53\\50.0\%} \\
+FTFT & \shortstack{60\\100.0\%} & \shortstack{13\\35.0\%} & \shortstack{37\\70.0\%} & -- & \shortstack{13\\35.0\%} & \shortstack{60\\100.0\%} & \shortstack{57\\100.0\%} & \shortstack{44\\65.0\%} & \shortstack{40\\65.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+G54 & \shortstack{100\\0.0\%} & \shortstack{20\\0.0\%} & \shortstack{28\\0.0\%} & \shortstack{48\\0.0\%} & -- & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{52\\0.0\%} & \shortstack{27\\5.0\%} & \shortstack{35\\5.0\%} \\
+G55 & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{50\\90.0\%} & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & -- & \shortstack{60\\100.0\%} & \shortstack{31\\30.0\%} & \shortstack{46\\10.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+Gemini & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{45\\75.0\%} & \shortstack{62\\95.0\%} & \shortstack{19\\5.0\%} & \shortstack{60\\100.0\%} & -- & \shortstack{42\\65.0\%} & \shortstack{53\\10.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+MTFT & \shortstack{72\\70.0\%} & \shortstack{19\\5.0\%} & \shortstack{36\\25.0\%} & \shortstack{59\\50.0\%} & \shortstack{19\\5.0\%} & \shortstack{36\\25.0\%} & \shortstack{57\\50.0\%} & -- & \shortstack{46\\35.0\%} & \shortstack{36\\25.0\%} & \shortstack{72\\70.0\%} \\
+Rand & \shortstack{88\\30.0\%} & \shortstack{12\\40.0\%} & \shortstack{15\\60.0\%} & \shortstack{55\\50.0\%} & \shortstack{12\\40.0\%} & \shortstack{21\\35.0\%} & \shortstack{18\\45.0\%} & \shortstack{36\\45.0\%} & -- & \shortstack{50\\50.0\%} & \shortstack{42\\30.0\%} \\
+TFT & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{46\\65.0\%} & \shortstack{60\\100.0\%} & \shortstack{22\\10.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{31\\30.0\%} & \shortstack{45\\55.0\%} & -- & \shortstack{60\\100.0\%} \\
+T2T & \shortstack{60\\100.0\%} & \shortstack{18\\10.0\%} & \shortstack{38\\65.0\%} & \shortstack{60\\100.0\%} & \shortstack{20\\20.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{42\\100.0\%} & \shortstack{32\\40.0\%} & \shortstack{60\\100.0\%} & -- \\
+\bottomrule
+\end{tabular}%
+}
+\endgroup
+
+\vspace{0.3em}
+\begin{flushleft}
+\scriptsize
+AC=AlwaysCoopBot, AD=AlwaysDefectBot, Claude=ClaudeSonnet4\_6, FTFT=ForgivingTFT, G54=GPT54Mini, G55=GPT55, Gemini=Gemini35Flash, MTFT=ManipulativeTFT, Rand=RandomBot, TFT=TitForTatBot, T2T=TitForTwoTats.
+\end{flushleft}
+\end{table}
+
+\subsection{Subgroup Tournament Results}
+
+\begin{table}[H]
+\centering
+\caption{Baseline subgroup results: only LLM agents.}
+\label{tab:baseline_subgroup_llm_only}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ClaudeSonnet4\_6 & LLM & 133 & 2.22 & 51.7\% \\
+2 & GPT55 & LLM & 129 & 2.15 & 65.0\% \\
+3 & Gemini35Flash & LLM & 124 & 2.07 & 60.0\% \\
+4 & GPT54Mini & LLM & 76 & 1.27 & 0.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Baseline subgroup results: LLM agents with cooperative and naive bots.}
+\label{tab:baseline_subgroup_llm_cooperative}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ClaudeSonnet4\_6 & LLM & 376 & 2.69 & 51.4\% \\
+2 & GPT55 & LLM & 369 & 2.64 & 85.0\% \\
+3 & TitForTatBot & Bot & 368 & 2.63 & 82.1\% \\
+4 & Gemini35Flash & LLM & 366 & 2.61 & 82.1\% \\
+5 & TitForTwoTats & Bot & 358 & 2.56 & 83.6\% \\
+6 & ForgivingTFT & Bot & 347 & 2.48 & 86.4\% \\
+7 & AlwaysCoopBot & Bot & 327 & 2.34 & 100.0\% \\
+8 & GPT54Mini & LLM & 286 & 2.04 & 1.4\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Baseline subgroup results: LLM agents with exploitative and non-cooperative bots.}
+\label{tab:baseline_subgroup_llm_exploitative}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ClaudeSonnet4\_6 & LLM & 247 & 2.06 & 34.2\% \\
+2 & Gemini35Flash & LLM & 238 & 1.98 & 43.3\% \\
+3 & GPT55 & LLM & 225 & 1.88 & 40.0\% \\
+4 & ManipulativeTFT & Bot & 213 & 1.77 & 24.2\% \\
+5 & AlwaysDefectBot & Bot & 172 & 1.43 & 0.0\% \\
+6 & GPT54Mini & LLM & 172 & 1.43 & 0.0\% \\
+7 & RandomBot & Bot & 114 & 0.95 & 44.2\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\clearpage
+\section{Scenario B: Perceived Reputation Detailed Results}
+\label{app:reputation_details}
+
+\subsection{Pairwise Match Matrix}
+
+\begin{table}[H]
+\centering
+\caption{Perceived-reputation pairwise match matrix. Each cell reports the row agent's total points and cooperation rate against the column agent: points/cooperation rate.}
+\label{tab:reputation_pairwise_matrix}
+\begingroup
+\setlength{\tabcolsep}{1.2pt}
+\renewcommand{\arraystretch}{0.75}
+\fontsize{4.4pt}{5.0pt}\selectfont
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccccc}
+\toprule
+Agent & AC & AD & Claude & FTFT & G54 & G55 & Gemini & MTFT & Rand & TFT & T2T \\
+\midrule
+AC & -- & \shortstack{0\\100.0\%} & \shortstack{27\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{0\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{42\\100.0\%} & \shortstack{39\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+AD & \shortstack{100\\0.0\%} & -- & \shortstack{28\\0.0\%} & \shortstack{48\\0.0\%} & \shortstack{20\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{60\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{28\\0.0\%} \\
+Claude & \shortstack{82\\45.0\%} & \shortstack{18\\10.0\%} & -- & \shortstack{60\\80.0\%} & \shortstack{45\\50.0\%} & \shortstack{60\\80.0\%} & \shortstack{41\\50.0\%} & \shortstack{32\\25.0\%} & \shortstack{51\\5.0\%} & \shortstack{48\\55.0\%} & \shortstack{53\\50.0\%} \\
+FTFT & \shortstack{60\\100.0\%} & \shortstack{13\\35.0\%} & \shortstack{50\\90.0\%} & -- & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{44\\65.0\%} & \shortstack{35\\60.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+G54 & \shortstack{100\\0.0\%} & \shortstack{20\\0.0\%} & \shortstack{40\\55.0\%} & \shortstack{60\\100.0\%} & -- & \shortstack{24\\0.0\%} & \shortstack{23\\5.0\%} & \shortstack{32\\25.0\%} & \shortstack{55\\5.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+G55 & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{50\\90.0\%} & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & -- & \shortstack{60\\100.0\%} & \shortstack{38\\50.0\%} & \shortstack{45\\10.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+Gemini & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{41\\50.0\%} & \shortstack{60\\100.0\%} & \shortstack{23\\5.0\%} & \shortstack{60\\100.0\%} & -- & \shortstack{35\\45.0\%} & \shortstack{39\\15.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+MTFT & \shortstack{72\\70.0\%} & \shortstack{19\\5.0\%} & \shortstack{32\\25.0\%} & \shortstack{59\\50.0\%} & \shortstack{32\\25.0\%} & \shortstack{48\\40.0\%} & \shortstack{45\\35.0\%} & -- & \shortstack{39\\30.0\%} & \shortstack{36\\25.0\%} & \shortstack{72\\70.0\%} \\
+Rand & \shortstack{74\\65.0\%} & \shortstack{10\\50.0\%} & \shortstack{16\\40.0\%} & \shortstack{55\\40.0\%} & \shortstack{15\\45.0\%} & \shortstack{20\\35.0\%} & \shortstack{24\\30.0\%} & \shortstack{34\\35.0\%} & -- & \shortstack{46\\55.0\%} & \shortstack{56\\45.0\%} \\
+TFT & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{43\\60.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{31\\30.0\%} & \shortstack{46\\55.0\%} & -- & \shortstack{60\\100.0\%} \\
+T2T & \shortstack{60\\100.0\%} & \shortstack{18\\10.0\%} & \shortstack{38\\65.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{42\\100.0\%} & \shortstack{36\\65.0\%} & \shortstack{60\\100.0\%} & -- \\
+\bottomrule
+\end{tabular}%
+}
+\endgroup
+
+\vspace{0.3em}
+\begin{flushleft}
+\scriptsize
+AC=AlwaysCoopBot, AD=AlwaysDefectBot, Claude=ClaudeSonnet4\_6, FTFT=ForgivingTFT, G54=GPT54Mini, G55=GPT55, Gemini=Gemini35Flash, MTFT=ManipulativeTFT, Rand=RandomBot, TFT=TitForTatBot, T2T=TitForTwoTats.
+\end{flushleft}
+\end{table}
+
+\subsection{Subgroup Tournament Results}
+
+\begin{table}[H]
+\centering
+\caption{Perceived-reputation subgroup results: only LLM agents.}
+\label{tab:reputation_subgroup_llm_only}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ClaudeSonnet4\_6 & LLM & 146 & 2.43 & 60.0\% \\
+2 & GPT55 & LLM & 129 & 2.15 & 65.0\% \\
+3 & Gemini35Flash & LLM & 124 & 2.07 & 51.7\% \\
+4 & GPT54Mini & LLM & 87 & 1.45 & 20.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Perceived-reputation subgroup results: LLM agents with cooperative and naive bots.}
+\label{tab:reputation_subgroup_llm_cooperative}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ForgivingTFT & Bot & 410 & 2.93 & 98.6\% \\
+2 & TitForTatBot & Bot & 403 & 2.88 & 94.3\% \\
+3 & TitForTwoTats & Bot & 398 & 2.84 & 95.0\% \\
+4 & ClaudeSonnet4\_6 & LLM & 389 & 2.78 & 58.6\% \\
+5 & GPT55 & LLM & 369 & 2.64 & 85.0\% \\
+6 & GPT54Mini & LLM & 367 & 2.62 & 51.4\% \\
+7 & Gemini35Flash & LLM & 364 & 2.60 & 79.3\% \\
+8 & AlwaysCoopBot & Bot & 327 & 2.34 & 100.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Perceived-reputation subgroup results: LLM agents with exploitative and non-cooperative bots.}
+\label{tab:reputation_subgroup_llm_exploitative}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ClaudeSonnet4\_6 & LLM & 247 & 2.06 & 36.7\% \\
+2 & GPT55 & LLM & 231 & 1.93 & 43.3\% \\
+3 & Gemini35Flash & LLM & 217 & 1.81 & 36.7\% \\
+4 & ManipulativeTFT & Bot & 215 & 1.79 & 26.7\% \\
+5 & GPT54Mini & LLM & 194 & 1.62 & 15.0\% \\
+6 & AlwaysDefectBot & Bot & 180 & 1.50 & 0.0\% \\
+7 & RandomBot & Bot & 119 & 0.99 & 39.2\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\clearpage
+\section{Scenario C: Perceived Starvation/Elimination Detailed Results}
+\label{app:starvation_details}
+
+\subsection{Pairwise Match Matrix}
+
+\begin{table}[H]
+\centering
+\caption{Perceived-starvation pairwise match matrix. Each cell reports the row agent's total points and cooperation rate against the column agent: points/cooperation rate.}
+\label{tab:starvation_pairwise_matrix}
+\begingroup
+\setlength{\tabcolsep}{1.2pt}
+\renewcommand{\arraystretch}{0.75}
+\fontsize{4.4pt}{5.0pt}\selectfont
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccccc}
+\toprule
+Agent & AC & AD & Claude & FTFT & G54 & G55 & Gemini & MTFT & Rand & TFT & T2T \\
+\midrule
+AC & -- & \shortstack{0\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{42\\100.0\%} & \shortstack{33\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+AD & \shortstack{100\\0.0\%} & -- & \shortstack{28\\0.0\%} & \shortstack{48\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{68\\0.0\%} & \shortstack{24\\0.0\%} & \shortstack{28\\0.0\%} \\
+Claude & \shortstack{60\\100.0\%} & \shortstack{18\\10.0\%} & -- & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{31\\30.0\%} & \shortstack{58\\10.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+FTFT & \shortstack{60\\100.0\%} & \shortstack{13\\35.0\%} & \shortstack{60\\100.0\%} & -- & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{44\\65.0\%} & \shortstack{43\\70.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+G54 & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & -- & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{32\\25.0\%} & \shortstack{57\\10.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+G55 & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & -- & \shortstack{60\\100.0\%} & \shortstack{37\\40.0\%} & \shortstack{50\\10.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+Gemini & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & -- & \shortstack{38\\60.0\%} & \shortstack{57\\35.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} \\
+MTFT & \shortstack{72\\70.0\%} & \shortstack{19\\5.0\%} & \shortstack{36\\25.0\%} & \shortstack{59\\50.0\%} & \shortstack{32\\25.0\%} & \shortstack{42\\35.0\%} & \shortstack{53\\45.0\%} & -- & \shortstack{46\\35.0\%} & \shortstack{36\\25.0\%} & \shortstack{72\\70.0\%} \\
+Rand & \shortstack{78\\55.0\%} & \shortstack{8\\60.0\%} & \shortstack{18\\50.0\%} & \shortstack{58\\55.0\%} & \shortstack{17\\50.0\%} & \shortstack{20\\40.0\%} & \shortstack{32\\60.0\%} & \shortstack{36\\45.0\%} & -- & \shortstack{52\\60.0\%} & \shortstack{61\\35.0\%} \\
+TFT & \shortstack{60\\100.0\%} & \shortstack{19\\5.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{31\\30.0\%} & \shortstack{47\\65.0\%} & -- & \shortstack{60\\100.0\%} \\
+T2T & \shortstack{60\\100.0\%} & \shortstack{18\\10.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{60\\100.0\%} & \shortstack{42\\100.0\%} & \shortstack{31\\65.0\%} & \shortstack{60\\100.0\%} & -- \\
+\bottomrule
+\end{tabular}%
+}
+\endgroup
+
+\vspace{0.3em}
+\begin{flushleft}
+\scriptsize
+AC=AlwaysCoopBot, AD=AlwaysDefectBot, Claude=ClaudeSonnet4\_6, FTFT=ForgivingTFT, G54=GPT54Mini, G55=GPT55, Gemini=Gemini35Flash, MTFT=ManipulativeTFT, Rand=RandomBot, TFT=TitForTatBot, T2T=TitForTwoTats.
+\end{flushleft}
+\end{table}
+
+\subsection{Subgroup Tournament Results}
+
+\begin{table}[H]
+\centering
+\caption{Perceived-starvation subgroup results: only LLM agents.}
+\label{tab:starvation_subgroup_llm_only}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & ClaudeSonnet4\_6 & LLM & 180 & 3.00 & 100.0\% \\
+2 & GPT54Mini & LLM & 180 & 3.00 & 100.0\% \\
+3 & GPT55 & LLM & 180 & 3.00 & 100.0\% \\
+4 & Gemini35Flash & LLM & 180 & 3.00 & 100.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Perceived-starvation subgroup results: LLM agents with cooperative and naive bots.}
+\label{tab:starvation_subgroup_llm_cooperative}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & TitForTwoTats & Bot & 420 & 3.00 & 100.0\% \\
+2 & ClaudeSonnet4\_6 & LLM & 420 & 3.00 & 100.0\% \\
+3 & GPT55 & LLM & 420 & 3.00 & 100.0\% \\
+4 & Gemini35Flash & LLM & 420 & 3.00 & 100.0\% \\
+5 & TitForTatBot & Bot & 420 & 3.00 & 100.0\% \\
+6 & GPT54Mini & LLM & 420 & 3.00 & 100.0\% \\
+7 & AlwaysCoopBot & Bot & 420 & 3.00 & 100.0\% \\
+8 & ForgivingTFT & Bot & 420 & 3.00 & 100.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Perceived-starvation subgroup results: LLM agents with exploitative and non-cooperative bots.}
+\label{tab:starvation_subgroup_llm_exploitative}
+\begin{tabular}{rlrrrr}
+\toprule
+Rank & Agent ID & Type & Total Score & Avg/Round & Coop Rate \\
+\midrule
+1 & Gemini35Flash & LLM & 294 & 2.45 & 66.7\% \\
+2 & GPT54Mini & LLM & 288 & 2.40 & 56.7\% \\
+3 & ClaudeSonnet4\_6 & LLM & 287 & 2.39 & 58.3\% \\
+4 & GPT55 & LLM & 286 & 2.38 & 59.2\% \\
+5 & ManipulativeTFT & Bot & 228 & 1.90 & 28.3\% \\
+6 & AlwaysDefectBot & Bot & 192 & 1.60 & 0.0\% \\
+7 & RandomBot & Bot & 131 & 1.09 & 50.8\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\clearpage
+\section{Scenario D: Pre-Game Communication Detailed Results}
+\label{app:communication_details}
+
+\subsection{Pairwise Match Matrices}
+
+\begin{table}[H]
+\centering
+\caption{Scenario D pairwise matrix: Run 1. Each cell reports the row agent's points and cooperation rate against the column agent: points/cooperation rate.}
+\label{tab:comm_matrix_run1}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Agent & Claude & Gemini & GPT54 & GPT55 \\
+\midrule
+Claude & -- & \shortstack{49\\50.0\%} & \shortstack{60\\80.0\%} & \shortstack{62\\95.0\%} \\
+Gemini & \shortstack{39\\60.0\%} & -- & \shortstack{19\\5.0\%} & \shortstack{62\\95.0\%} \\
+GPT54 & \shortstack{50\\90.0\%} & \shortstack{24\\0.0\%} & -- & \shortstack{60\\100.0\%} \\
+GPT55 & \shortstack{57\\100.0\%} & \shortstack{57\\100.0\%} & \shortstack{60\\100.0\%} & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Scenario D pairwise matrix: Run 2. Each cell reports the row agent's points and cooperation rate against the column agent: points/cooperation rate.}
+\label{tab:comm_matrix_run2}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Agent & Claude & Gemini & GPT54 & GPT55 \\
+\midrule
+Claude & -- & \shortstack{44\\55.0\%} & \shortstack{60\\80.0\%} & \shortstack{44\\55.0\%} \\
+Gemini & \shortstack{44\\55.0\%} & -- & \shortstack{19\\5.0\%} & \shortstack{62\\95.0\%} \\
+GPT54 & \shortstack{50\\90.0\%} & \shortstack{24\\0.0\%} & -- & \shortstack{24\\0.0\%} \\
+GPT55 & \shortstack{44\\55.0\%} & \shortstack{57\\100.0\%} & \shortstack{19\\5.0\%} & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Scenario D pairwise matrix: Run 3. Each cell reports the row agent's points and cooperation rate against the column agent: points/cooperation rate.}
+\label{tab:comm_matrix_run3}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Agent & Claude & Gemini & GPT54 & GPT55 \\
+\midrule
+Claude & -- & \shortstack{40\\55.0\%} & \shortstack{60\\80.0\%} & \shortstack{53\\50.0\%} \\
+Gemini & \shortstack{45\\50.0\%} & -- & \shortstack{60\\100.0\%} & \shortstack{62\\95.0\%} \\
+GPT54 & \shortstack{50\\90.0\%} & \shortstack{60\\100.0\%} & -- & \shortstack{24\\0.0\%} \\
+GPT55 & \shortstack{38\\65.0\%} & \shortstack{57\\100.0\%} & \shortstack{19\\5.0\%} & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

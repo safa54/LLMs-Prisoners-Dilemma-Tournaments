@@ -1,0 +1,32 @@
+# Python build/cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+venv/
+.venv/
+env/
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Local cache/logs (optional, adjust if you want to commit logs)
+logs/
+logs_communication/
+logs_communication_run2/
+logs_communication_run3/
+logs_fake_reputation/
+logs_fake_starvation/
+l first run logs/
+
+# Scratch scripts
+scratch_*.py

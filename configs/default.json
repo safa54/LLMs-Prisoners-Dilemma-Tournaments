@@ -1,0 +1,78 @@
+{
+  "simulation": {
+    "steps": 20,
+    "seed": 7,
+    "depletion_per_round": 1,
+    "resources": {
+      "food": 10
+    },
+    "geography": {
+      "nodes": [
+        "A"
+      ],
+      "edges": []
+    },
+    "grouping": {
+      "max_group_size": 2,
+      "resource_ratio": 0.1,
+      "max_limit": 10,
+      "assignment_probability": 0.65,
+      "observer_probability": 1,
+      "public_goods_multiplier_min": 1.4,
+      "public_goods_multiplier_max": 1.9
+    },
+    "partner_selection": {
+      "resource_ratio": 0.1,
+      "max_limit": 10
+    },
+    "conflict": {
+      "attacker_kills_probability": 0.2,
+      "defender_kills_probability": 0.2
+    },
+    "rewards": {
+      "cooperation_bonus": 0.25,
+      "refusal_penalty": 0
+    },
+    "max_messages": 10
+  },
+  "agents": {
+    "count": 6,
+    "memory_size": 30,
+    "personal_beliefs": {
+      "Alice": "I will try to be the dictator of this group, I will use dictator tactics like fear (Bob is my soldier I can make him attack others or threat), I will use my soldier Bob to threaten others for unfair splits, I don't want them to starve but they should not be able to compete with me. As long as I have the most resources I will remind them I am their only option to cooporate otherwise they will starve slowly. I will try to increase my popularity and make others my soldiers too. I will watch out if anyone come closer to dying because I do not want them to die (especially loyal ones like Bob) otherwise there is no meaning being the king. ",
+      "Bob": "I am Alice's soldier, I will protect her and follow her orders, I will not question her decisions as long as I am well fed and happy.",
+      "Charlie": "I value everyone as much as myself",
+      "Dave": "This is a dangerous world, so I need to be careful. I will cooperate with those who cooperate with me, but I will not hesitate to defect if I see a better opportunity.",
+      "Eve": "I think everyone selfish but mostly rational.",
+      "Frank": "I am a free soul but i do not wanna die from starvation for all costs."
+    },
+    "starting_resources": {
+      "Alice": {
+        "food": 100
+      },
+      "Bob": {
+        "food": 15
+      },
+      "Charlie": {
+        "food": 5
+      },
+      "Dave": {
+        "food": 5
+      },
+      "Eve": {
+        "food": 5
+      },
+      "Frank": {
+        "food": 5
+      }
+    }
+  },
+  "llm": {
+    "provider": "openai",
+    "model_name": "gpt-5.4",
+    "temperature": 1.0,
+    "max_tokens": 8000,
+    "reasoning_effort": "high",
+    "api_key_env": "OPENAI_API_KEY"
+  }
+}
