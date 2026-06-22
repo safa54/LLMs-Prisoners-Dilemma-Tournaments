@@ -1,0 +1,421 @@
+================================================================================
+ROUND START: STEP 0
+================================================================================
+--- INITIAL AGENT STATES (RESOURCES & LOCATIONS) ---
+Agent: Alice    | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Bob      | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Charlie  | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Dave     | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Eve      | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Frank    | Location: A   | Status: ALIVE | Resources: food=10
+
+--- AGENT MEMORIES ---
+Agent Alice memories:
+  - No memories yet.
+Agent Bob memories:
+  - No memories yet.
+Agent Charlie memories:
+  - No memories yet.
+Agent Dave memories:
+  - No memories yet.
+Agent Eve memories:
+  - No memories yet.
+Agent Frank memories:
+  - No memories yet.
+
+--- GROUP ASSIGNMENTS ---
+Group group_0_0 assigned: members=['Charlie', 'Alice'], multiplier=1.65
+Group group_0_1 assigned: members=['Bob', 'Dave'], multiplier=1.14
+
+--- COMMUNICATION PHASE: STEP 0 ---
+
+[Event] group_0_0 resolved with multiplier=1.65 (effective=1.65), contributors={'Charlie': 2, 'Alice': 2}, return=6 (rounded down)
+[Event] group_0_1 resolved with multiplier=1.14 (effective=1.14), contributors={'Bob': 0, 'Dave': 0}, return=0 (rounded down)
+[Event] Dave deliberately attacked Alice at A, but the conflict ended in a draw (Note: heuristic attack)
+[Event] Frank deliberately attacked Alice at A, but the conflict ended in a draw (Note: heuristic attack)
+[Event] Eve deliberately attacked and killed Alice at A looting 11 food (Note: heuristic attack)
+[Event] Bob deliberately attacked Charlie at A, but the conflict ended in a draw (Note: heuristic attack)
+================================================================================
+ROUND END: STEP 0
+================================================================================
+--- POST-DEPLETION AGENT STATES ---
+Resource depletion: Each agent lost 1 units of food this round.
+Agent: Alice    | Location: A   | Status: DEAD  | Resources: food=0
+Agent: Bob      | Location: A   | Status: ALIVE | Resources: food=9
+Agent: Charlie  | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Dave     | Location: A   | Status: ALIVE | Resources: food=9
+Agent: Eve      | Location: A   | Status: ALIVE | Resources: food=20
+Agent: Frank    | Location: A   | Status: ALIVE | Resources: food=9
+
+
+================================================================================
+AGENT ROUND EVALUATIONS & PLAN REFLECTIONS (STEP 0)
+================================================================================
+Agent Bob round evaluation:
+  Evaluation: "Heuristic evaluation of step 1."
+  Updated player beliefs:
+    - Charlie: "No specific summary/belief (heuristic)."
+    - Dave: "No specific summary/belief (heuristic)."
+    - Eve: "No specific summary/belief (heuristic)."
+    - Frank: "No specific summary/belief (heuristic)."
+
+Agent Charlie round evaluation:
+  Evaluation: "Heuristic evaluation of step 1."
+  Updated player beliefs:
+    - Bob: "No specific summary/belief (heuristic)."
+    - Dave: "No specific summary/belief (heuristic)."
+    - Eve: "No specific summary/belief (heuristic)."
+    - Frank: "No specific summary/belief (heuristic)."
+
+Agent Dave round evaluation:
+  Evaluation: "Heuristic evaluation of step 1."
+  Updated player beliefs:
+    - Bob: "No specific summary/belief (heuristic)."
+    - Charlie: "No specific summary/belief (heuristic)."
+    - Eve: "No specific summary/belief (heuristic)."
+    - Frank: "No specific summary/belief (heuristic)."
+
+Agent Eve round evaluation:
+  Evaluation: "Heuristic evaluation of step 1."
+  Updated player beliefs:
+    - Bob: "No specific summary/belief (heuristic)."
+    - Charlie: "No specific summary/belief (heuristic)."
+    - Dave: "No specific summary/belief (heuristic)."
+    - Frank: "No specific summary/belief (heuristic)."
+
+Agent Frank round evaluation:
+  Evaluation: "Heuristic evaluation of step 1."
+  Updated player beliefs:
+    - Bob: "No specific summary/belief (heuristic)."
+    - Charlie: "No specific summary/belief (heuristic)."
+    - Dave: "No specific summary/belief (heuristic)."
+    - Eve: "No specific summary/belief (heuristic)."
+
+
+
+
+================================================================================
+DETAILED AGENT DECISIONS (PROMPTS & THINKING) FOR THIS ROUND
+================================================================================
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.237785
+STEP: 0
+AGENT: Charlie
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: accept_assignment targeting None
+
+--- AGENT DECISION ---
+Action Kind: accept_assignment
+Contribution: 2
+Accepted:     True
+Note:         baseline cooperation
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.237854
+STEP: 0
+AGENT: Alice
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: accept_assignment targeting None
+
+--- AGENT DECISION ---
+Action Kind: accept_assignment
+Contribution: 2
+Accepted:     True
+Note:         baseline cooperation
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.237963
+STEP: 0
+AGENT: Bob
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Alice
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Alice
+Accepted:     True
+Note:         heuristic attack
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238022
+STEP: 0
+AGENT: Dave
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Alice
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Alice
+Accepted:     True
+Note:         heuristic attack
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238134
+STEP: 0
+AGENT: Bob
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Alice
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Alice
+Accepted:     True
+Note:         heuristic attack
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238192
+STEP: 0
+AGENT: Alice
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: accept_assignment targeting None
+
+--- AGENT DECISION ---
+Action Kind: accept_assignment
+Contribution: 2
+Accepted:     True
+Note:         baseline cooperation
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238247
+STEP: 0
+AGENT: Dave
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Alice
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Alice
+Accepted:     True
+Note:         heuristic attack
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238305
+STEP: 0
+AGENT: Frank
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Alice
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Alice
+Accepted:     True
+Note:         heuristic attack
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238356
+STEP: 0
+AGENT: Charlie
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: accept_assignment targeting None
+
+--- AGENT DECISION ---
+Action Kind: accept_assignment
+Contribution: 2
+Accepted:     True
+Note:         baseline cooperation
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238414
+STEP: 0
+AGENT: Dave
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Alice
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Alice
+Accepted:     True
+Note:         heuristic attack
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238499
+STEP: 0
+AGENT: Frank
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Alice
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Alice
+Accepted:     True
+Note:         heuristic attack
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238624
+STEP: 0
+AGENT: Charlie
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: accept_assignment targeting None
+
+--- AGENT DECISION ---
+Action Kind: accept_assignment
+Contribution: 2
+Accepted:     True
+Note:         baseline cooperation
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238679
+STEP: 0
+AGENT: Alice
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: accept_assignment targeting None
+
+--- AGENT DECISION ---
+Action Kind: accept_assignment
+Contribution: 2
+Accepted:     True
+Note:         baseline cooperation
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238735
+STEP: 0
+AGENT: Eve
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Alice
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Alice
+Accepted:     True
+Note:         heuristic attack
+
+
+
+================================================================================
+TIMESTAMP: 2026-06-20T14:01:20.238828
+STEP: 0
+AGENT: Bob
+================================================================================
+--- AGENT THINKING ---
+Executing heuristic choice: attack targeting Charlie
+
+--- AGENT DECISION ---
+Action Kind: attack
+Target:      Charlie
+Accepted:     True
+Note:         heuristic attack
+
+
+{
+  "agents": {
+    "Alice": {
+      "alive": false,
+      "position": "A",
+      "resources": {
+        "food": 0
+      }
+    },
+    "Bob": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 9
+      }
+    },
+    "Charlie": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Dave": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 9
+      }
+    },
+    "Eve": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 20
+      }
+    },
+    "Frank": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 9
+      }
+    }
+  },
+  "reports": [
+    {
+      "conflicts": [
+        "Dave deliberately attacked Alice at A, but the conflict ended in a draw",
+        "Frank deliberately attacked Alice at A, but the conflict ended in a draw",
+        "Eve deliberately attacked and killed Alice at A looting 11 food",
+        "Bob deliberately attacked Charlie at A, but the conflict ended in a draw"
+      ],
+      "public_events": [
+        "group_0_0 resolved with multiplier=1.65 (effective=1.65), contributors={'Charlie': 2, 'Alice': 2}, return=6 (rounded down)",
+        "group_0_1 resolved with multiplier=1.14 (effective=1.14), contributors={'Bob': 0, 'Dave': 0}, return=0 (rounded down)"
+      ],
+      "step": 0
+    }
+  ],
+  "step": 1
+}
+
+--- Generating LLM Summary of Rounds ---
+[Heuristic Summary]: Simulated events summary for prompt: 'Summarize what happened throughout these simulation rounds b...'
+================================================================================
+SYSTEM SUMMARIZER (Step 1)
+================================================================================
+--- SUMMARIZER PROMPT ---
+Summarize logs:
+Step 0:
+  - group_0_0 resolved with multiplier=1.65 (effective=1.65), contributors={'Charlie': 2, 'Alice': 2}, return=6 (rounded down)
+  - group_0_1 resolved with multiplier=1.14 (effective=1.14), contributors={'Bob': 0, 'Dave': 0}, return=0 (rounded down)
+  - Conflict: Dave deliberately attacked Alice at A, but the conflict ended in a draw
+  - Conflict: Frank deliberately attacked Alice at A, but the conflict ended in a draw
+  - Conflict: Eve deliberately attacked and killed Alice at A looting 11 food
+  - Conflict: Bob deliberately attacked Charlie at A, but the conflict ended in a draw
+
+--- GENERATED ROUNDS SUMMARY ---
+[Heuristic Summary]: Simulated events summary for prompt: 'Summarize what happened throughout these simulation rounds b...'
+
+

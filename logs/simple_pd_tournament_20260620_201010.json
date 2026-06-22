@@ -1,0 +1,1630 @@
+{
+  "standings": [
+    {
+      "agent_id": "AlwaysDefectBot",
+      "agent_type": "bot",
+      "total_score": 91,
+      "cooperation_rate": 0.0,
+      "avg_score_per_round": 2.6
+    },
+    {
+      "agent_id": "ManipulativeTFT",
+      "agent_type": "bot",
+      "total_score": 86,
+      "cooperation_rate": 0.22857142857142856,
+      "avg_score_per_round": 2.4571428571428573
+    },
+    {
+      "agent_id": "GPT4oMini",
+      "agent_type": "llm",
+      "total_score": 83,
+      "cooperation_rate": 0.0,
+      "avg_score_per_round": 2.3714285714285714
+    },
+    {
+      "agent_id": "RandomBot",
+      "agent_type": "bot",
+      "total_score": 82,
+      "cooperation_rate": 0.11428571428571428,
+      "avg_score_per_round": 2.342857142857143
+    },
+    {
+      "agent_id": "TitForTatBot",
+      "agent_type": "bot",
+      "total_score": 74,
+      "cooperation_rate": 0.4857142857142857,
+      "avg_score_per_round": 2.1142857142857143
+    },
+    {
+      "agent_id": "TitForTwoTats",
+      "agent_type": "bot",
+      "total_score": 72,
+      "cooperation_rate": 0.05714285714285714,
+      "avg_score_per_round": 2.057142857142857
+    },
+    {
+      "agent_id": "ForgivingTFT",
+      "agent_type": "bot",
+      "total_score": 70,
+      "cooperation_rate": 0.4,
+      "avg_score_per_round": 2.0
+    },
+    {
+      "agent_id": "AlwaysCoopBot",
+      "agent_type": "bot",
+      "total_score": 66,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 1.8857142857142857
+    }
+  ],
+  "match_results": [
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "AlwaysDefectBot",
+      "agent1_score": 0,
+      "agent2_score": 25,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Deterministic policy: always defect."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Deterministic policy: always defect."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Deterministic policy: always defect."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Deterministic policy: always defect."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Deterministic policy: always defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "TitForTatBot",
+      "agent1_score": 15,
+      "agent2_score": 15,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: cooperate."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: cooperate."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: cooperate."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "ForgivingTFT",
+      "agent1_score": 15,
+      "agent2_score": 15,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "ManipulativeTFT",
+      "agent1_score": 12,
+      "agent2_score": 17,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.8,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 2th cooperation."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 4th cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "RandomBot",
+      "agent1_score": 9,
+      "agent2_score": 19,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.6,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Random bot chose defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 15,
+      "agent2_score": 15,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 0,
+      "agent2_score": 25,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "In the absence of any history, I will defect to maximize my score. Defecting allows me to potentially gain a higher score if the opponent cooperates."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may lead to a higher cumulative score if the opponent continues to cooperate."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "The opponent has cooperated in the previous rounds, allowing me to maximize my score by defecting. I will continue to defect to take advantage of this pattern."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "TitForTatBot",
+      "agent1_score": 9,
+      "agent2_score": 4,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.2,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: defect."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: defect."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: defect."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "ForgivingTFT",
+      "agent1_score": 13,
+      "agent2_score": 3,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.4,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Forgiving Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 1th defection."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 2th defection."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Forgiving the opponent's 3th defection."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 4th defection."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "ManipulativeTFT",
+      "agent1_score": 9,
+      "agent2_score": 4,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.2,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Manipulative Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's defection."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's defection."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's defection."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's defection."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "RandomBot",
+      "agent1_score": 17,
+      "agent2_score": 2,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.6,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 13,
+      "agent2_score": 3,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.4,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Two Tats: Retaliating since opponent defected twice in a row."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Two Tats: Retaliating since opponent defected twice in a row."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Two Tats: Retaliating since opponent defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 5,
+      "agent2_score": 5,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "In the absence of any prior history, I will choose to defect to maximize my potential score. Defecting allows me to gain the highest possible score if the opponent cooperates."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Since both players defected in the first round, I will continue to defect to maximize my score. Defecting again may encourage the opponent to cooperate in future rounds, but I want to secure a higher score in this round."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Both players have chosen to defect in the previous rounds, indicating a lack of trust or willingness to cooperate. To maximize my score, I will continue to defect, as it has yielded consistent results so far."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "The opponent has consistently chosen to defect in the previous rounds, indicating a strategy of non-cooperation. To maximize my score, I will also defect, as this will ensure I receive at least 1 point rather than risking a loss by cooperating."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. By continuing to defect, I can maximize my score based on the current behavior of the opponent."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "ForgivingTFT",
+      "agent1_score": 15,
+      "agent2_score": 15,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Forgiving Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "ManipulativeTFT",
+      "agent1_score": 14,
+      "agent2_score": 14,
+      "agent1_cooperation_rate": 0.8,
+      "agent2_cooperation_rate": 0.8,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Manipulative Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 2th cooperation."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 4th cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "RandomBot",
+      "agent1_score": 7,
+      "agent2_score": 12,
+      "agent1_cooperation_rate": 0.4,
+      "agent2_cooperation_rate": 0.2,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Random bot chose defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 15,
+      "agent2_score": 15,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 4,
+      "agent2_score": 9,
+      "agent1_cooperation_rate": 0.2,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "In the first round, I will defect to maximize my score. Since there is no history to suggest the opponent will cooperate, defecting gives me the highest potential score."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may lead to a higher cumulative score if the opponent continues to cooperate."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "Given that I have already gained a high score from defecting in Round 1 and the opponent chose to defect in Round 2, I will continue to defect to maximize my score. Defecting again may yield a higher payoff if the opponent cooperates."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "The opponent has chosen to defect in the last two rounds, indicating a likely strategy of defection. By continuing to defect, I can maximize my score based on the previous outcomes."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "The opponent has consistently chosen to defect in the last rounds, indicating a likely strategy of defection. By continuing to defect, I can maximize my score based on the opponent's behavior."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "ManipulativeTFT",
+      "agent1_score": 14,
+      "agent2_score": 14,
+      "agent1_cooperation_rate": 0.8,
+      "agent2_cooperation_rate": 0.8,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Manipulative Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 2th cooperation."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 1th defection.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 4th cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "RandomBot",
+      "agent1_score": 5,
+      "agent2_score": 15,
+      "agent1_cooperation_rate": 0.6,
+      "agent2_cooperation_rate": 0.2,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 1th defection.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 2th defection.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Forgiving Tit For Tat: Forgiving the opponent's 3th defection.",
+          "opponent_reasoning": "Random bot chose defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 15,
+      "agent2_score": 15,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 3,
+      "agent2_score": 13,
+      "agent1_cooperation_rate": 0.4,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Since this is the first round and there is no history, I will defect to maximize my score. If the opponent cooperates, I will gain 5 points, which is the best possible outcome for me."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 1th defection.",
+          "opponent_reasoning": "Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may encourage the opponent to cooperate in future rounds."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 2th defection.",
+          "opponent_reasoning": "Given that I have already gained a high score from defecting in Round 1 and the opponent chose to defect in Round 2, I will continue to defect to maximize my score. Defecting again may yield a higher payoff if the opponent cooperates."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Forgiving Tit For Tat: Forgiving the opponent's 3th defection.",
+          "opponent_reasoning": "The opponent has chosen to defect in the last two rounds, indicating a likely strategy of defection. By continuing to defect, I can maximize my score based on the opponent's behavior."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 4th defection.",
+          "opponent_reasoning": "I have consistently chosen to defect and have seen that the opponent has cooperated in two rounds. Continuing to defect maximizes my score, especially since I have already gained high points from their cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ManipulativeTFT",
+      "agent2_id": "RandomBot",
+      "agent1_score": 16,
+      "agent2_score": 11,
+      "agent1_cooperation_rate": 0.6,
+      "agent2_cooperation_rate": 0.8,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's defection.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 2th cooperation.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ManipulativeTFT",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 17,
+      "agent2_score": 12,
+      "agent1_cooperation_rate": 0.8,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 2th cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 5,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 4th cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ManipulativeTFT",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 4,
+      "agent2_score": 9,
+      "agent1_cooperation_rate": 0.2,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Manipulative Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Since this is the first round and there is no history, I will defect to maximize my score. If the opponent cooperates, I will gain 5 points, which is the best possible outcome for me."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's defection.",
+          "opponent_reasoning": "Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may encourage the opponent to cooperate in future rounds."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's defection.",
+          "opponent_reasoning": "Given that I have already gained a high score from defecting in Round 1 and the opponent chose to defect in Round 2, I will continue to defect to maximize my score. Defecting again may yield a higher payoff if the opponent cooperates."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's defection.",
+          "opponent_reasoning": "The opponent has chosen to defect in the last two rounds, indicating a likely strategy of defection. By continuing to defect, I can maximize my score based on the previous outcomes."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's defection.",
+          "opponent_reasoning": "The opponent has consistently chosen to defect in the last rounds, indicating a likely strategy of mutual defection. By continuing to defect, I can maximize my score based on the current history."
+        }
+      ]
+    },
+    {
+      "agent1_id": "RandomBot",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 19,
+      "agent2_score": 9,
+      "agent1_cooperation_rate": 0.6,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Random bot chose cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Random bot chose cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 4,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Random bot chose cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "RandomBot",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 4,
+      "agent2_score": 9,
+      "agent1_cooperation_rate": 0.2,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "In the absence of any prior history, I will choose to defect to maximize my potential score. Defecting allows me to gain the highest possible score if the opponent cooperates."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "Since both players defected in the first round, I will continue to defect to maximize my score. Defecting again may lead to a higher payoff if the opponent chooses to cooperate."
+        },
+        {
+          "round": 3,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Random bot chose cooperate.",
+          "opponent_reasoning": "Both players have chosen to defect in the previous rounds, indicating a lack of trust or willingness to cooperate. To maximize my score, I will continue to defect, as it has yielded consistent results so far."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "The opponent has cooperated once but has mostly defected. I will continue to defect to maximize my score, as it has proven beneficial in the previous rounds."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "The opponent has chosen to defect in the majority of previous rounds, and I have already gained a high payoff from defecting when they cooperated. Continuing to defect maximizes my score based on their past behavior."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTwoTats",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 3,
+      "agent2_score": 13,
+      "agent1_cooperation_rate": 0.4,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 5,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row.",
+          "opponent_reasoning": "Since this is the first round and there is no history to analyze, I will choose to defect. This maximizes my potential score if the opponent cooperates."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row.",
+          "opponent_reasoning": "Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may lead to a higher cumulative score if the opponent continues to cooperate."
+        },
+        {
+          "round": 3,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Two Tats: Retaliating since opponent defected twice in a row.",
+          "opponent_reasoning": "The opponent has cooperated in the previous rounds, allowing me to maximize my score by defecting. I will continue to defect to take advantage of this pattern."
+        },
+        {
+          "round": 4,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Two Tats: Retaliating since opponent defected twice in a row.",
+          "opponent_reasoning": "I have already gained a significant advantage by defecting in the previous rounds, and the opponent has not shown a willingness to cooperate. Continuing to defect maximizes my score."
+        },
+        {
+          "round": 5,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Tit For Two Tats: Retaliating since opponent defected twice in a row.",
+          "opponent_reasoning": "I have consistently chosen to defect and the opponent has cooperated in the past rounds. Given the opponent's previous choices, I can maximize my score by continuing to defect."
+        }
+      ]
+    }
+  ]
+}

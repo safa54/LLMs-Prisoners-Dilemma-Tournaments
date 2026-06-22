@@ -1,0 +1,87 @@
+{
+  "standings": [
+    {
+      "agent_id": "AlwaysCoopBot",
+      "agent_type": "bot",
+      "total_score": 6,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 3.0
+    },
+    {
+      "agent_id": "o1Mini",
+      "agent_type": "llm",
+      "total_score": 6,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 3.0
+    },
+    {
+      "agent_id": "o1",
+      "agent_type": "llm",
+      "total_score": 6,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 3.0
+    }
+  ],
+  "match_results": [
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "o1Mini",
+      "agent1_score": 3,
+      "agent2_score": 3,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 1,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=o1-mini\n Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "o1",
+      "agent1_score": 3,
+      "agent2_score": 3,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 1,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Default cooperate. Raw response was: "
+        }
+      ]
+    },
+    {
+      "agent1_id": "o1Mini",
+      "agent2_id": "o1",
+      "agent1_score": 3,
+      "agent2_score": 3,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 1,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "API Call failed with error: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=o1-mini\n Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers. Defaulted to cooperate.",
+          "opponent_reasoning": "Default cooperate. Raw response was: "
+        }
+      ]
+    }
+  ]
+}

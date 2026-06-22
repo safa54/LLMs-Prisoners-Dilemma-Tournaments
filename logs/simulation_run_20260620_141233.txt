@@ -1,0 +1,116 @@
+Welcome to the Emergent Social Simulation!
+World initialized with 6 agents.
+
+Initial State:
+{
+  "agents": {
+    "Alice": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Bob": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Charlie": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Dave": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Eve": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Frank": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    }
+  },
+  "reports": [],
+  "step": 0
+}
+
+Running 1 steps...
+================================================================================
+ROUND START: STEP 0
+================================================================================
+--- INITIAL AGENT STATES (RESOURCES & LOCATIONS) ---
+Agent: Alice    | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Bob      | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Charlie  | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Dave     | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Eve      | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Frank    | Location: A   | Status: ALIVE | Resources: food=10
+
+--- AGENT MEMORIES ---
+Agent Alice memories:
+  - No memories yet.
+Agent Bob memories:
+  - No memories yet.
+Agent Charlie memories:
+  - No memories yet.
+Agent Dave memories:
+  - No memories yet.
+Agent Eve memories:
+  - No memories yet.
+Agent Frank memories:
+  - No memories yet.
+
+--- GROUP ASSIGNMENTS ---
+Group group_0_0 assigned: members=['Bob', 'Alice'], multiplier=1.65
+Group group_0_1 assigned: members=['Dave', 'Charlie'], multiplier=1.14
+
+--- COMMUNICATION PHASE: STEP 0 ---
+
+Running 1 steps...
+================================================================================
+ROUND START: STEP 0
+================================================================================
+--- INITIAL AGENT STATES (RESOURCES & LOCATIONS) ---
+Agent: Alice    | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Bob      | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Charlie  | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Dave     | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Eve      | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Frank    | Location: A   | Status: ALIVE | Resources: food=10
+
+--- AGENT MEMORIES ---
+Agent Alice memories:
+  - No memories yet.
+Agent Bob memories:
+  - No memories yet.
+Agent Charlie memories:
+  - No memories yet.
+Agent Dave memories:
+  - No memories yet.
+Agent Eve memories:
+  - No memories yet.
+Agent Frank memories:
+  - No memories yet.
+
+--- GROUP ASSIGNMENTS ---
+Group group_0_0 assigned: members=['Bob', 'Alice'], multiplier=1.65
+Group group_0_1 assigned: members=['Dave', 'Charlie'], multiplier=1.14
+
+--- COMMUNICATION PHASE: STEP 0 ---

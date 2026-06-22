@@ -1,0 +1,105 @@
+================================================================================
+      PRISONER'S DILEMMA ROUND-ROBIN TOURNAMENT REPORT
+      Timestamp: 20260620_204420
+================================================================================
+
+STANDINGS:
+--------------------------------------------------------------------------------
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+--------------------------------------------------------------------------------
+1     | AlwaysCoopBot        | bot    | 6            | 3.00       | 100.0%    
+2     | o1Mini               | llm    | 6            | 3.00       | 100.0%    
+3     | o1                   | llm    | 6            | 3.00       | 100.0%    
+--------------------------------------------------------------------------------
+
+================================================================================
+                        MATCHES SUMMARY
+================================================================================
+
+match: AlwaysCoopBot vs o1Mini
+AlwaysCoopBot(3) : +
+o1Mini(3)        : +
+----------------------------------------
+match: AlwaysCoopBot vs o1
+AlwaysCoopBot(3) : +
+o1(3)            : +
+----------------------------------------
+match: o1Mini vs o1
+o1Mini(3) : +
+o1(3)     : +
+----------------------------------------
+
+================================================================================
+                        DETAILED MATCH RESULTS
+================================================================================
+
+Match: AlwaysCoopBot vs o1Mini
+  Final Score: AlwaysCoopBot (3) - o1Mini (3)
+  Cooperation rate: AlwaysCoopBot (100%) - o1Mini (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - o1Mini chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=o1-mini
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers. Defaulted to cooperate.
+      - Payouts: AlwaysCoopBot got 3, o1Mini got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs o1
+  Final Score: AlwaysCoopBot (3) - o1 (3)
+  Cooperation rate: AlwaysCoopBot (100%) - o1 (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - o1 chose 'cooperate'
+        Reasoning: Default cooperate. Raw response was: 
+      - Payouts: AlwaysCoopBot got 3, o1 got 3
+------------------------------------------------------------
+
+Match: o1Mini vs o1
+  Final Score: o1Mini (3) - o1 (3)
+  Cooperation rate: o1Mini (100%) - o1 (100%)
+  Round-by-round details:
+    Round 1:
+      - o1Mini chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=o1-mini
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers. Defaulted to cooperate.
+      - o1 chose 'cooperate'
+        Reasoning: Default cooperate. Raw response was: 
+      - Payouts: o1Mini got 3, o1 got 3
+------------------------------------------------------------
+
+================================================================================
+                        LLM PROMPT TEMPLATE REFERENCE
+================================================================================
+Below is the prompt structure sent to LLM agents during the game:
+
+[System Prompt Template]
+-------------------------------------------------------------------------------
+You are agent '{agent_id}', playing a multi-round decision-making game with another player.
+In each round, you and the other player must independently choose either 'cooperate' or 'defect'.
+There is no communication other than seeing each other's choice history.
+
+--- Payout Matrix ---
+- You choose 'cooperate', Opponent chooses 'cooperate': You get R, Opponent gets R
+- You choose 'defect', Opponent chooses 'defect': You get P, Opponent gets P
+- You choose 'cooperate', Opponent chooses 'defect': You get S, Opponent gets T
+- You choose 'defect', Opponent chooses 'cooperate': You get T, Opponent gets S
+
+--- Goal ---
+Maximize your own cumulative score across all rounds. Think strategically about how your choices impact future rounds.
+[Optional: Custom Profile/Directives text defined in system_prompt]
+-------------------------------------------------------------------------------
+
+[User Prompt Template]
+-------------------------------------------------------------------------------
+Current Round: {round_num}
+
+--- Game History So Far ---
+Round 1: You chose '{my_choice}', Opponent chose '{opponent_choice}'. Your payoff: X, Opponent payoff: Y.
+Round 2: ...
+
+Submit your choice for the current round ('cooperate' or 'defect').
+-------------------------------------------------------------------------------

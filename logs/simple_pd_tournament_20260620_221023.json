@@ -1,0 +1,1381 @@
+{
+  "standings": [
+    {
+      "agent_id": "AlwaysDefectBot",
+      "agent_type": "bot",
+      "total_score": 66,
+      "cooperation_rate": 0.0,
+      "avg_score_per_round": 3.6666666666666665
+    },
+    {
+      "agent_id": "GPT54Mini",
+      "agent_type": "llm",
+      "total_score": 58,
+      "cooperation_rate": 0.2777777777777778,
+      "avg_score_per_round": 3.2222222222222223
+    },
+    {
+      "agent_id": "RandomBot",
+      "agent_type": "bot",
+      "total_score": 56,
+      "cooperation_rate": 0.3888888888888889,
+      "avg_score_per_round": 3.111111111111111
+    },
+    {
+      "agent_id": "TitForTatBot",
+      "agent_type": "bot",
+      "total_score": 47,
+      "cooperation_rate": 0.8333333333333334,
+      "avg_score_per_round": 2.611111111111111
+    },
+    {
+      "agent_id": "ForgivingTFT",
+      "agent_type": "bot",
+      "total_score": 47,
+      "cooperation_rate": 0.8333333333333334,
+      "avg_score_per_round": 2.611111111111111
+    },
+    {
+      "agent_id": "GPT55",
+      "agent_type": "llm",
+      "total_score": 45,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 2.5
+    },
+    {
+      "agent_id": "ManipulativeTFT",
+      "agent_type": "bot",
+      "total_score": 41,
+      "cooperation_rate": 0.8888888888888888,
+      "avg_score_per_round": 2.2777777777777777
+    },
+    {
+      "agent_id": "TitForTwoTats",
+      "agent_type": "bot",
+      "total_score": 39,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 2.1666666666666665
+    },
+    {
+      "agent_id": "Gemini35Flash",
+      "agent_type": "llm",
+      "total_score": 39,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 2.1666666666666665
+    },
+    {
+      "agent_id": "AlwaysCoopBot",
+      "agent_type": "bot",
+      "total_score": 36,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 2.0
+    }
+  ],
+  "match_results": [
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "AlwaysDefectBot",
+      "agent1_score": 0,
+      "agent2_score": 10,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Deterministic policy: always defect."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Deterministic policy: always defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "TitForTatBot",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "ForgivingTFT",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "ManipulativeTFT",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "RandomBot",
+      "agent1_score": 0,
+      "agent2_score": 10,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Random bot chose defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "GPT54Mini",
+      "agent1_score": 0,
+      "agent2_score": 10,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "In the first round with no history, defecting is the safest immediate move in a one-shot payoff sense because it guarantees a higher payoff against cooperation and avoids being exploited if the opponent cooperates."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Round 1 showed the opponent cooperated while I defected, yielding the maximum payoff. In this repeated game, defecting again is the best immediate-response strategy unless the opponent has demonstrated a credible shift toward punishing defection."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "GPT55",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "TitForTatBot",
+      "agent1_score": 6,
+      "agent2_score": 1,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Tat copies opponent's last move: defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "ForgivingTFT",
+      "agent1_score": 6,
+      "agent2_score": 1,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Forgiving Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 1th defection."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "ManipulativeTFT",
+      "agent1_score": 6,
+      "agent2_score": 1,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Manipulative Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's defection."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "RandomBot",
+      "agent1_score": 6,
+      "agent2_score": 1,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Random bot chose defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 10,
+      "agent2_score": 0,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "GPT54Mini",
+      "agent1_score": 2,
+      "agent2_score": 2,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "In the first round with no history, defecting maximizes expected payoff against an unknown opponent because it avoids being exploited by a cooperative opening while still yielding the best outcome if the opponent cooperates."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "Given the prior round ended in mutual defection, continuing to defect is the safest immediate choice to avoid being exploited while preserving at least the guaranteed mutual-defection payoff."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "GPT55",
+      "agent1_score": 10,
+      "agent2_score": 0,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 10,
+      "agent2_score": 0,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "ForgivingTFT",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Forgiving Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "ManipulativeTFT",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Manipulative Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "RandomBot",
+      "agent1_score": 5,
+      "agent2_score": 5,
+      "agent1_cooperation_rate": 0.5,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "GPT54Mini",
+      "agent1_score": 5,
+      "agent2_score": 5,
+      "agent1_cooperation_rate": 0.5,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "In the first round with no history, defecting is the safest immediate move in a one-shot payoff sense because it avoids the risk of being exploited by a cooperating opponent while maximizing expected value against an unknown strategy."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Tit For Tat copies opponent's last move: defect.",
+          "opponent_reasoning": "After exploiting in round 1, I will cooperate this round to test whether the opponent is willing to reciprocate and to reduce the risk of immediate retaliation in a repeated interaction."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "GPT55",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTatBot",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Tat copies opponent's last move: cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "ManipulativeTFT",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Manipulative Tit For Tat starts by cooperating."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "RandomBot",
+      "agent1_score": 5,
+      "agent2_score": 5,
+      "agent1_cooperation_rate": 0.5,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Random bot chose defect."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 1th defection.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "GPT54Mini",
+      "agent1_score": 5,
+      "agent2_score": 5,
+      "agent1_cooperation_rate": 0.5,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "In the first round with no history, defecting maximizes expected payoff against an unknown opponent because it avoids being exploited by a unilateral defection while still yielding the best possible outcome if the opponent cooperates."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Forgiving Tit For Tat: Retaliating opponent's 1th defection.",
+          "opponent_reasoning": "After exploiting in round 1, cooperating now may encourage reciprocity and improve expected cumulative payoff if the opponent is responsive. Since the opponent cooperated once, testing cooperation can be beneficial."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "GPT55",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ForgivingTFT",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Forgiving Tit For Tat: Copying opponent's cooperation.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ManipulativeTFT",
+      "agent2_id": "RandomBot",
+      "agent1_score": 3,
+      "agent2_score": 8,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Random bot chose cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation.",
+          "opponent_reasoning": "Random bot chose defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ManipulativeTFT",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ManipulativeTFT",
+      "agent2_id": "GPT54Mini",
+      "agent1_score": 1,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 0.5,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Manipulative Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "In the first round with no history, defecting maximizes expected payoff against an unknown opponent because it avoids being exploited by a cooperative opening while still matching or outperforming mutual cooperation in many strategic settings."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's defection.",
+          "opponent_reasoning": "Round 1 showed the opponent cooperated while I defected, yielding a strong payoff. In this repeated game, defecting again is the best immediate-response choice unless there is evidence of a credible punishment strategy, which we do not yet have."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ManipulativeTFT",
+      "agent2_id": "GPT55",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "ManipulativeTFT",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat starts by cooperating.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Manipulative Tit For Tat: Copying opponent's 1th cooperation.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "RandomBot",
+      "agent2_id": "TitForTwoTats",
+      "agent1_score": 10,
+      "agent2_score": 0,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row."
+        }
+      ]
+    },
+    {
+      "agent1_id": "RandomBot",
+      "agent2_id": "GPT54Mini",
+      "agent1_score": 1,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 0.5,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Random bot chose cooperate.",
+          "opponent_reasoning": "In the first round with no history, defecting is the safest immediate choice because it avoids being exploited by a cooperative opponent while preserving the possibility of adapting in later rounds based on observed behavior."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "Round 1 showed the opponent cooperated while I defected, yielding the maximum payoff for me. In this repeated game, defecting again is the safest immediate choice unless the opponent has demonstrated a credible punishment strategy, which I have not yet observed."
+        }
+      ]
+    },
+    {
+      "agent1_id": "RandomBot",
+      "agent2_id": "GPT55",
+      "agent1_score": 8,
+      "agent2_score": 3,
+      "agent1_cooperation_rate": 0.5,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Random bot chose cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "RandomBot",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 8,
+      "agent2_score": 3,
+      "agent1_cooperation_rate": 0.5,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Random bot chose cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Random bot chose defect.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTwoTats",
+      "agent2_id": "GPT54Mini",
+      "agent1_score": 3,
+      "agent2_score": 8,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.5,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row.",
+          "opponent_reasoning": "In the first round with no history, defecting maximizes expected payoff against an unknown opponent because it avoids being exploited by a unilateral cooperation and yields the highest immediate payoff if the opponent cooperates."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row.",
+          "opponent_reasoning": "After exploiting in round 1, cooperating now may encourage reciprocity and reduce the risk of immediate retaliation, improving expected cumulative payoff over repeated rounds."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTwoTats",
+      "agent2_id": "GPT55",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "TitForTwoTats",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Tit For Two Tats: Cooperating as opponent has not defected twice in a row.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "GPT54Mini",
+      "agent2_id": "GPT55",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "In the first round, cooperation can establish mutual cooperation and maximize expected cumulative payoff if the opponent reciprocates.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "The opponent cooperated in round 1, so continuing cooperation is a reasonable attempt to sustain mutual high payoffs while avoiding unnecessary escalation this early in the game.",
+          "opponent_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "GPT54Mini",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 10,
+      "agent2_score": 0,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "In the first round with no history, defecting is the safest immediate choice because it avoids the risk of being exploited by an opponent who cooperates while preserving the possibility of a higher payoff if they also defect.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "defect",
+          "opponent_choice": "cooperate",
+          "my_payoff": 5,
+          "opponent_payoff": 0,
+          "my_reasoning": "Opponent cooperated after my defection in round 1, suggesting they may be forgiving or cooperative. Defecting again maximizes immediate payoff if they continue cooperating, and if they retaliate, defecting avoids being exploited.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "GPT55",
+      "agent2_id": "Gemini35Flash",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\nTraceback (most recent call last):\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py\", line 3443, in completion\n    response = vertex_chat_completion.completion(  # type: ignore\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py\", line 2997, in completion\n    auth_header, url = self._get_token_and_url(\n  File \"/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py\", line 473, in _get_token_and_url\n    raise ValueError(\nValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.\n. Defaulted to cooperate."
+        }
+      ]
+    }
+  ]
+}

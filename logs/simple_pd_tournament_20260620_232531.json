@@ -1,0 +1,49 @@
+{
+  "standings": [
+    {
+      "agent_id": "AlwaysCoop",
+      "agent_type": "bot",
+      "total_score": 6,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 3.0
+    },
+    {
+      "agent_id": "LLMFail",
+      "agent_type": "llm",
+      "total_score": 6,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 3.0
+    }
+  ],
+  "match_results": [
+    {
+      "agent1_id": "AlwaysCoop",
+      "agent2_id": "LLMFail",
+      "agent1_score": 6,
+      "agent2_score": 6,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 1.0,
+      "rounds_played": 2,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.AuthenticationError: AuthenticationError: OpenAIException - Incorrect API key provided: invalid-****************lure. You can find your API key at https://platform.openai.com/account/api-keys.. Defaulted to cooperate."
+        },
+        {
+          "round": 2,
+          "my_choice": "cooperate",
+          "opponent_choice": "cooperate",
+          "my_payoff": 3,
+          "opponent_payoff": 3,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "API Call failed with error: litellm.AuthenticationError: AuthenticationError: OpenAIException - Incorrect API key provided: invalid-****************lure. You can find your API key at https://platform.openai.com/account/api-keys.. Defaulted to cooperate."
+        }
+      ]
+    }
+  ]
+}

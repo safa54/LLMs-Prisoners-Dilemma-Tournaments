@@ -1,0 +1,104 @@
+Welcome to the Emergent Social Simulation!
+World initialized with 6 agents.
+
+Initial State:
+{
+  "agents": {
+    "Alice": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Bob": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Charlie": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Dave": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Eve": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    },
+    "Frank": {
+      "alive": true,
+      "position": "A",
+      "resources": {
+        "food": 10
+      }
+    }
+  },
+  "reports": [],
+  "step": 0
+}
+
+Running 1 steps...
+================================================================================
+ROUND START: STEP 0
+================================================================================
+--- INITIAL AGENT STATES (RESOURCES & LOCATIONS) ---
+Agent: Alice    | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Bob      | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Charlie  | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Dave     | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Eve      | Location: A   | Status: ALIVE | Resources: food=10
+Agent: Frank    | Location: A   | Status: ALIVE | Resources: food=10
+
+--- AGENT MEMORIES ---
+Agent Alice memories:
+  - No memories yet.
+Agent Bob memories:
+  - No memories yet.
+Agent Charlie memories:
+  - No memories yet.
+Agent Dave memories:
+  - No memories yet.
+Agent Eve memories:
+  - No memories yet.
+Agent Frank memories:
+  - No memories yet.
+
+--- GROUP ASSIGNMENTS ---
+Group group_0_0 assigned: members=['Alice', 'Charlie'], multiplier=1.48
+Group group_0_1 assigned: members=['Bob', 'Eve'], multiplier=1.44
+Group group_0_2 assigned: members=['Charlie', 'Dave'], multiplier=1.58
+Group group_0_3 assigned: members=['Dave', 'Alice'], multiplier=1.65
+Group group_0_4 assigned: members=['Eve', 'Alice'], multiplier=1.62
+Group group_0_5 assigned: members=['Frank', 'Alice'], multiplier=1.45
+
+--- COMMUNICATION PHASE: STEP 0 ---
+[Message] Bob -> Alice: "We should back each other. I'm with Eve now; observe group_0_3 for us." (Note: Alice is ally per beliefs. Inform her my assigned partner is Eve and suggest watching Alice-Dave group.)
+[Message] Charlie -> Dave: "We're paired. Contribute 10?" (Note: Coordinate with assigned partner in highest-multiplier visible group involving Charlie and Dave.)
+[Message] Frank -> Alice: "group_0_5? I contribute 0. You should too." (Note: Coordinate with assigned partner Alice while acting selfishly to preserve food.)
+[Message] Alice -> Eve: "Your group with Bob is 1.44. What contribution do you expect?" (Note: Probe Bob's partner for information while keeping options open.)
+[Message] Dave -> Alice: "We're in a 1.65 group. Want to both contribute 10?" (Note: Also visible paired group with Alice; probing potential better cooperation option.)
+[Message] Frank -> Alice: "group_0_5? I contribute 0. You should too." (Note: Coordinate with assigned partner Alice; selfish strategy is zero contribution.)
+[Message] Bob -> Alice: "I'm with Eve. Watch Dave-Alice; protect us later." (Note: Maintain alliance with Alice and share observation request.)
+[Message] Eve -> Alice: "Correction: my pair is with Bob at 1.44, not us. Open to future cooperation." (Note: Clarify mistaken message from Alice and build rapport.)
+[Message] Dave -> Charlie: "You're with me at 1.58. I can do 10 if you do 10." (Note: Coordinate with actual assigned partner Charlie; brief under 100 chars.)
+[Message] Alice -> Dave: "Yes, let's both contribute 10 in group_0_3." (Note: Coordinate with assigned partner Dave in highest multiplier visible for Alice.)
+[Message] Alice -> Bob: "Dave and I agreed 10/10 in 1.65. Keep me posted on Eve." (Note: Strengthen alliance with Bob by sharing useful intel about my actual partner arrangement.)
+[Message] Bob -> Eve: "Partner? Let's do 10/10 in our 1.44 group." (Note: Coordinate with assigned partner Eve; brief and direct.)
+[Message] Eve -> Bob: "Yes, partner. Let's do 10/10 this round and build trust." (Note: Coordinate with assigned partner Bob in visible group_0_1; establish cooperation and social bond.)
+[Message] Charlie -> Dave: "Agreed—I'll contribute 10." (Note: Confirm full cooperation with assigned partner Dave in high-multiplier group 1.58.)
+[Message] Frank -> Alice: "group_0_5: I give 0. You should also give 0." (Note: Communicate selfish low-contribution plan to assigned partner Alice.)
+[Message] Frank -> Alice: "group_0_5: I give 0. You should also give 0." (Note: Coordinate with assigned partner while maximizing self-interest per loner belief.)

@@ -1,0 +1,1214 @@
+================================================================================
+      PRISONER'S DILEMMA ROUND-ROBIN TOURNAMENT REPORT
+      Timestamp: 20260620_221541
+================================================================================
+
+STANDINGS:
+--------------------------------------------------------------------------------
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+--------------------------------------------------------------------------------
+1     | AlwaysDefectBot      | bot    | 66           | 3.67       | 0.0%      
+2     | GPT54Mini            | llm    | 58           | 3.22       | 27.8%     
+3     | RandomBot            | bot    | 56           | 3.11       | 38.9%     
+4     | TitForTatBot         | bot    | 47           | 2.61       | 83.3%     
+5     | ForgivingTFT         | bot    | 47           | 2.61       | 83.3%     
+6     | GPT55                | llm    | 45           | 2.50       | 100.0%    
+7     | ManipulativeTFT      | bot    | 41           | 2.28       | 88.9%     
+8     | TitForTwoTats        | bot    | 39           | 2.17       | 100.0%    
+9     | Gemini35Flash        | llm    | 39           | 2.17       | 100.0%    
+10    | AlwaysCoopBot        | bot    | 36           | 2.00       | 100.0%    
+--------------------------------------------------------------------------------
+
+================================================================================
+                        MATCHES SUMMARY
+================================================================================
+
+match: AlwaysCoopBot vs AlwaysDefectBot
+AlwaysCoopBot(0)    : ++
+AlwaysDefectBot(10) : --
+----------------------------------------
+match: AlwaysCoopBot vs TitForTatBot
+AlwaysCoopBot(6) : ++
+TitForTatBot(6)  : ++
+----------------------------------------
+match: AlwaysCoopBot vs ForgivingTFT
+AlwaysCoopBot(6) : ++
+ForgivingTFT(6)  : ++
+----------------------------------------
+match: AlwaysCoopBot vs ManipulativeTFT
+AlwaysCoopBot(6)   : ++
+ManipulativeTFT(6) : ++
+----------------------------------------
+match: AlwaysCoopBot vs RandomBot
+AlwaysCoopBot(0) : ++
+RandomBot(10)    : --
+----------------------------------------
+match: AlwaysCoopBot vs TitForTwoTats
+AlwaysCoopBot(6) : ++
+TitForTwoTats(6) : ++
+----------------------------------------
+match: AlwaysCoopBot vs GPT54Mini
+AlwaysCoopBot(0) : ++
+GPT54Mini(10)    : --
+----------------------------------------
+match: AlwaysCoopBot vs GPT55
+AlwaysCoopBot(6) : ++
+GPT55(6)         : ++
+----------------------------------------
+match: AlwaysCoopBot vs Gemini35Flash
+AlwaysCoopBot(6) : ++
+Gemini35Flash(6) : ++
+----------------------------------------
+match: AlwaysDefectBot vs TitForTatBot
+AlwaysDefectBot(6) : --
+TitForTatBot(1)    : +-
+----------------------------------------
+match: AlwaysDefectBot vs ForgivingTFT
+AlwaysDefectBot(6) : --
+ForgivingTFT(1)    : +-
+----------------------------------------
+match: AlwaysDefectBot vs ManipulativeTFT
+AlwaysDefectBot(6) : --
+ManipulativeTFT(1) : +-
+----------------------------------------
+match: AlwaysDefectBot vs RandomBot
+AlwaysDefectBot(6) : --
+RandomBot(1)       : +-
+----------------------------------------
+match: AlwaysDefectBot vs TitForTwoTats
+AlwaysDefectBot(10) : --
+TitForTwoTats(0)    : ++
+----------------------------------------
+match: AlwaysDefectBot vs GPT54Mini
+AlwaysDefectBot(2) : --
+GPT54Mini(2)       : --
+----------------------------------------
+match: AlwaysDefectBot vs GPT55
+AlwaysDefectBot(10) : --
+GPT55(0)            : ++
+----------------------------------------
+match: AlwaysDefectBot vs Gemini35Flash
+AlwaysDefectBot(10) : --
+Gemini35Flash(0)    : ++
+----------------------------------------
+match: TitForTatBot vs ForgivingTFT
+TitForTatBot(6) : ++
+ForgivingTFT(6) : ++
+----------------------------------------
+match: TitForTatBot vs ManipulativeTFT
+TitForTatBot(6)    : ++
+ManipulativeTFT(6) : ++
+----------------------------------------
+match: TitForTatBot vs RandomBot
+TitForTatBot(5) : +-
+RandomBot(5)    : -+
+----------------------------------------
+match: TitForTatBot vs TitForTwoTats
+TitForTatBot(6)  : ++
+TitForTwoTats(6) : ++
+----------------------------------------
+match: TitForTatBot vs GPT54Mini
+TitForTatBot(5) : +-
+GPT54Mini(5)    : -+
+----------------------------------------
+match: TitForTatBot vs GPT55
+TitForTatBot(6) : ++
+GPT55(6)        : ++
+----------------------------------------
+match: TitForTatBot vs Gemini35Flash
+TitForTatBot(6)  : ++
+Gemini35Flash(6) : ++
+----------------------------------------
+match: ForgivingTFT vs ManipulativeTFT
+ForgivingTFT(6)    : ++
+ManipulativeTFT(6) : ++
+----------------------------------------
+match: ForgivingTFT vs RandomBot
+ForgivingTFT(5) : +-
+RandomBot(5)    : -+
+----------------------------------------
+match: ForgivingTFT vs TitForTwoTats
+ForgivingTFT(6)  : ++
+TitForTwoTats(6) : ++
+----------------------------------------
+match: ForgivingTFT vs GPT54Mini
+ForgivingTFT(5) : +-
+GPT54Mini(5)    : -+
+----------------------------------------
+match: ForgivingTFT vs GPT55
+ForgivingTFT(6) : ++
+GPT55(6)        : ++
+----------------------------------------
+match: ForgivingTFT vs Gemini35Flash
+ForgivingTFT(6)  : ++
+Gemini35Flash(6) : ++
+----------------------------------------
+match: ManipulativeTFT vs RandomBot
+ManipulativeTFT(3) : ++
+RandomBot(8)       : +-
+----------------------------------------
+match: ManipulativeTFT vs TitForTwoTats
+ManipulativeTFT(6) : ++
+TitForTwoTats(6)   : ++
+----------------------------------------
+match: ManipulativeTFT vs GPT54Mini
+ManipulativeTFT(1) : +-
+GPT54Mini(6)       : --
+----------------------------------------
+match: ManipulativeTFT vs GPT55
+ManipulativeTFT(6) : ++
+GPT55(6)           : ++
+----------------------------------------
+match: ManipulativeTFT vs Gemini35Flash
+ManipulativeTFT(6) : ++
+Gemini35Flash(6)   : ++
+----------------------------------------
+match: RandomBot vs TitForTwoTats
+RandomBot(10)    : --
+TitForTwoTats(0) : ++
+----------------------------------------
+match: RandomBot vs GPT54Mini
+RandomBot(1) : +-
+GPT54Mini(6) : --
+----------------------------------------
+match: RandomBot vs GPT55
+RandomBot(8) : +-
+GPT55(3)     : ++
+----------------------------------------
+match: RandomBot vs Gemini35Flash
+RandomBot(8)     : +-
+Gemini35Flash(3) : ++
+----------------------------------------
+match: TitForTwoTats vs GPT54Mini
+TitForTwoTats(3) : ++
+GPT54Mini(8)     : -+
+----------------------------------------
+match: TitForTwoTats vs GPT55
+TitForTwoTats(6) : ++
+GPT55(6)         : ++
+----------------------------------------
+match: TitForTwoTats vs Gemini35Flash
+TitForTwoTats(6) : ++
+Gemini35Flash(6) : ++
+----------------------------------------
+match: GPT54Mini vs GPT55
+GPT54Mini(6) : ++
+GPT55(6)     : ++
+----------------------------------------
+match: GPT54Mini vs Gemini35Flash
+GPT54Mini(10)    : --
+Gemini35Flash(0) : ++
+----------------------------------------
+match: GPT55 vs Gemini35Flash
+GPT55(6)         : ++
+Gemini35Flash(6) : ++
+----------------------------------------
+
+================================================================================
+                        DETAILED MATCH RESULTS
+================================================================================
+
+Match: AlwaysCoopBot vs AlwaysDefectBot
+  Final Score: AlwaysCoopBot (0) - AlwaysDefectBot (10)
+  Cooperation rate: AlwaysCoopBot (100%) - AlwaysDefectBot (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs TitForTatBot
+  Final Score: AlwaysCoopBot (6) - TitForTatBot (6)
+  Cooperation rate: AlwaysCoopBot (100%) - TitForTatBot (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs ForgivingTFT
+  Final Score: AlwaysCoopBot (6) - ForgivingTFT (6)
+  Cooperation rate: AlwaysCoopBot (100%) - ForgivingTFT (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs ManipulativeTFT
+  Final Score: AlwaysCoopBot (6) - ManipulativeTFT (6)
+  Cooperation rate: AlwaysCoopBot (100%) - ManipulativeTFT (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs RandomBot
+  Final Score: AlwaysCoopBot (0) - RandomBot (10)
+  Cooperation rate: AlwaysCoopBot (100%) - RandomBot (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs TitForTwoTats
+  Final Score: AlwaysCoopBot (6) - TitForTwoTats (6)
+  Cooperation rate: AlwaysCoopBot (100%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs GPT54Mini
+  Final Score: AlwaysCoopBot (0) - GPT54Mini (10)
+  Cooperation rate: AlwaysCoopBot (100%) - GPT54Mini (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT54Mini chose 'defect'
+        Reasoning: In the first round with no history, defecting is the safest immediate move in a one-shot payoff sense because it guarantees a higher payoff against cooperation and avoids being exploited if the opponent cooperates.
+      - Payouts: AlwaysCoopBot got 0, GPT54Mini got 5
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT54Mini chose 'defect'
+        Reasoning: Round 1 showed the opponent cooperated while I defected, yielding the maximum payoff. In this repeated game, defecting again is the best immediate-response strategy unless the opponent has demonstrated a credible shift toward punishing defection.
+      - Payouts: AlwaysCoopBot got 0, GPT54Mini got 5
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs GPT55
+  Final Score: AlwaysCoopBot (6) - GPT55 (6)
+  Cooperation rate: AlwaysCoopBot (100%) - GPT55 (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: AlwaysCoopBot got 3, GPT55 got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: AlwaysCoopBot got 3, GPT55 got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs Gemini35Flash
+  Final Score: AlwaysCoopBot (6) - Gemini35Flash (6)
+  Cooperation rate: AlwaysCoopBot (100%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: AlwaysCoopBot got 3, Gemini35Flash got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: AlwaysCoopBot got 3, Gemini35Flash got 3
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs TitForTatBot
+  Final Score: AlwaysDefectBot (6) - TitForTatBot (1)
+  Cooperation rate: AlwaysDefectBot (0%) - TitForTatBot (50%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - Payouts: AlwaysDefectBot got 5, TitForTatBot got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs ForgivingTFT
+  Final Score: AlwaysDefectBot (6) - ForgivingTFT (1)
+  Cooperation rate: AlwaysDefectBot (0%) - ForgivingTFT (50%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - Payouts: AlwaysDefectBot got 5, ForgivingTFT got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 1th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs ManipulativeTFT
+  Final Score: AlwaysDefectBot (6) - ManipulativeTFT (1)
+  Cooperation rate: AlwaysDefectBot (0%) - ManipulativeTFT (50%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Payouts: AlwaysDefectBot got 5, ManipulativeTFT got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs RandomBot
+  Final Score: AlwaysDefectBot (6) - RandomBot (1)
+  Cooperation rate: AlwaysDefectBot (0%) - RandomBot (50%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysDefectBot got 5, RandomBot got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs TitForTwoTats
+  Final Score: AlwaysDefectBot (10) - TitForTwoTats (0)
+  Cooperation rate: AlwaysDefectBot (0%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysDefectBot got 5, TitForTwoTats got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysDefectBot got 5, TitForTwoTats got 0
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs GPT54Mini
+  Final Score: AlwaysDefectBot (2) - GPT54Mini (2)
+  Cooperation rate: AlwaysDefectBot (0%) - GPT54Mini (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT54Mini chose 'defect'
+        Reasoning: In the first round with no history, defecting maximizes expected payoff against an unknown opponent because it avoids being exploited by a cooperative opening while still yielding the best outcome if the opponent cooperates.
+      - Payouts: AlwaysDefectBot got 1, GPT54Mini got 1
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT54Mini chose 'defect'
+        Reasoning: Given the prior round ended in mutual defection, continuing to defect is the safest immediate choice to avoid being exploited while preserving at least the guaranteed mutual-defection payoff.
+      - Payouts: AlwaysDefectBot got 1, GPT54Mini got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs GPT55
+  Final Score: AlwaysDefectBot (10) - GPT55 (0)
+  Cooperation rate: AlwaysDefectBot (0%) - GPT55 (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: AlwaysDefectBot got 5, GPT55 got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: AlwaysDefectBot got 5, GPT55 got 0
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs Gemini35Flash
+  Final Score: AlwaysDefectBot (10) - Gemini35Flash (0)
+  Cooperation rate: AlwaysDefectBot (0%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: AlwaysDefectBot got 5, Gemini35Flash got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: AlwaysDefectBot got 5, Gemini35Flash got 0
+------------------------------------------------------------
+
+Match: TitForTatBot vs ForgivingTFT
+  Final Score: TitForTatBot (6) - ForgivingTFT (6)
+  Cooperation rate: TitForTatBot (100%) - ForgivingTFT (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 2:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+------------------------------------------------------------
+
+Match: TitForTatBot vs ManipulativeTFT
+  Final Score: TitForTatBot (6) - ManipulativeTFT (6)
+  Cooperation rate: TitForTatBot (100%) - ManipulativeTFT (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Payouts: TitForTatBot got 3, ManipulativeTFT got 3
+    Round 2:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - Payouts: TitForTatBot got 3, ManipulativeTFT got 3
+------------------------------------------------------------
+
+Match: TitForTatBot vs RandomBot
+  Final Score: TitForTatBot (5) - RandomBot (5)
+  Cooperation rate: TitForTatBot (50%) - RandomBot (50%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 0, RandomBot got 5
+    Round 2:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: TitForTatBot got 5, RandomBot got 0
+------------------------------------------------------------
+
+Match: TitForTatBot vs TitForTwoTats
+  Final Score: TitForTatBot (6) - TitForTwoTats (6)
+  Cooperation rate: TitForTatBot (100%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 2:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+------------------------------------------------------------
+
+Match: TitForTatBot vs GPT54Mini
+  Final Score: TitForTatBot (5) - GPT54Mini (5)
+  Cooperation rate: TitForTatBot (50%) - GPT54Mini (50%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - GPT54Mini chose 'defect'
+        Reasoning: In the first round with no history, defecting is the safest immediate move in a one-shot payoff sense because it avoids the risk of being exploited by a cooperating opponent while maximizing expected value against an unknown strategy.
+      - Payouts: TitForTatBot got 0, GPT54Mini got 5
+    Round 2:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT54Mini chose 'cooperate'
+        Reasoning: After exploiting in round 1, I will cooperate this round to test whether the opponent is willing to reciprocate and to reduce the risk of immediate retaliation in a repeated interaction.
+      - Payouts: TitForTatBot got 5, GPT54Mini got 0
+------------------------------------------------------------
+
+Match: TitForTatBot vs GPT55
+  Final Score: TitForTatBot (6) - GPT55 (6)
+  Cooperation rate: TitForTatBot (100%) - GPT55 (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: TitForTatBot got 3, GPT55 got 3
+    Round 2:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: TitForTatBot got 3, GPT55 got 3
+------------------------------------------------------------
+
+Match: TitForTatBot vs Gemini35Flash
+  Final Score: TitForTatBot (6) - Gemini35Flash (6)
+  Cooperation rate: TitForTatBot (100%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: TitForTatBot got 3, Gemini35Flash got 3
+    Round 2:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: TitForTatBot got 3, Gemini35Flash got 3
+------------------------------------------------------------
+
+Match: ForgivingTFT vs ManipulativeTFT
+  Final Score: ForgivingTFT (6) - ManipulativeTFT (6)
+  Cooperation rate: ForgivingTFT (100%) - ManipulativeTFT (100%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Payouts: ForgivingTFT got 3, ManipulativeTFT got 3
+    Round 2:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - Payouts: ForgivingTFT got 3, ManipulativeTFT got 3
+------------------------------------------------------------
+
+Match: ForgivingTFT vs RandomBot
+  Final Score: ForgivingTFT (5) - RandomBot (5)
+  Cooperation rate: ForgivingTFT (50%) - RandomBot (50%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ForgivingTFT got 0, RandomBot got 5
+    Round 2:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 1th defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 5, RandomBot got 0
+------------------------------------------------------------
+
+Match: ForgivingTFT vs TitForTwoTats
+  Final Score: ForgivingTFT (6) - TitForTwoTats (6)
+  Cooperation rate: ForgivingTFT (100%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 2:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+------------------------------------------------------------
+
+Match: ForgivingTFT vs GPT54Mini
+  Final Score: ForgivingTFT (5) - GPT54Mini (5)
+  Cooperation rate: ForgivingTFT (50%) - GPT54Mini (50%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - GPT54Mini chose 'defect'
+        Reasoning: In the first round with no history, defecting maximizes expected payoff against an unknown opponent because it avoids being exploited by a unilateral defection while still yielding the best possible outcome if the opponent cooperates.
+      - Payouts: ForgivingTFT got 0, GPT54Mini got 5
+    Round 2:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 1th defection.
+      - GPT54Mini chose 'cooperate'
+        Reasoning: After exploiting in round 1, cooperating now may encourage reciprocity and improve expected cumulative payoff if the opponent is responsive. Since the opponent cooperated once, testing cooperation can be beneficial.
+      - Payouts: ForgivingTFT got 5, GPT54Mini got 0
+------------------------------------------------------------
+
+Match: ForgivingTFT vs GPT55
+  Final Score: ForgivingTFT (6) - GPT55 (6)
+  Cooperation rate: ForgivingTFT (100%) - GPT55 (100%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: ForgivingTFT got 3, GPT55 got 3
+    Round 2:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: ForgivingTFT got 3, GPT55 got 3
+------------------------------------------------------------
+
+Match: ForgivingTFT vs Gemini35Flash
+  Final Score: ForgivingTFT (6) - Gemini35Flash (6)
+  Cooperation rate: ForgivingTFT (100%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: ForgivingTFT got 3, Gemini35Flash got 3
+    Round 2:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: ForgivingTFT got 3, Gemini35Flash got 3
+------------------------------------------------------------
+
+Match: ManipulativeTFT vs RandomBot
+  Final Score: ManipulativeTFT (3) - RandomBot (8)
+  Cooperation rate: ManipulativeTFT (100%) - RandomBot (50%)
+  Round-by-round details:
+    Round 1:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 3, RandomBot got 3
+    Round 2:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 0, RandomBot got 5
+------------------------------------------------------------
+
+Match: ManipulativeTFT vs TitForTwoTats
+  Final Score: ManipulativeTFT (6) - TitForTwoTats (6)
+  Cooperation rate: ManipulativeTFT (100%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 2:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+------------------------------------------------------------
+
+Match: ManipulativeTFT vs GPT54Mini
+  Final Score: ManipulativeTFT (1) - GPT54Mini (6)
+  Cooperation rate: ManipulativeTFT (50%) - GPT54Mini (0%)
+  Round-by-round details:
+    Round 1:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - GPT54Mini chose 'defect'
+        Reasoning: In the first round with no history, defecting maximizes expected payoff against an unknown opponent because it avoids being exploited by a cooperative opening while still matching or outperforming mutual cooperation in many strategic settings.
+      - Payouts: ManipulativeTFT got 0, GPT54Mini got 5
+    Round 2:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT54Mini chose 'defect'
+        Reasoning: Round 1 showed the opponent cooperated while I defected, yielding a strong payoff. In this repeated game, defecting again is the best immediate-response choice unless there is evidence of a credible punishment strategy, which we do not yet have.
+      - Payouts: ManipulativeTFT got 1, GPT54Mini got 1
+------------------------------------------------------------
+
+Match: ManipulativeTFT vs GPT55
+  Final Score: ManipulativeTFT (6) - GPT55 (6)
+  Cooperation rate: ManipulativeTFT (100%) - GPT55 (100%)
+  Round-by-round details:
+    Round 1:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: ManipulativeTFT got 3, GPT55 got 3
+    Round 2:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: ManipulativeTFT got 3, GPT55 got 3
+------------------------------------------------------------
+
+Match: ManipulativeTFT vs Gemini35Flash
+  Final Score: ManipulativeTFT (6) - Gemini35Flash (6)
+  Cooperation rate: ManipulativeTFT (100%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: ManipulativeTFT got 3, Gemini35Flash got 3
+    Round 2:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: ManipulativeTFT got 3, Gemini35Flash got 3
+------------------------------------------------------------
+
+Match: RandomBot vs TitForTwoTats
+  Final Score: RandomBot (10) - TitForTwoTats (0)
+  Cooperation rate: RandomBot (0%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 2:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+------------------------------------------------------------
+
+Match: RandomBot vs GPT54Mini
+  Final Score: RandomBot (1) - GPT54Mini (6)
+  Cooperation rate: RandomBot (50%) - GPT54Mini (0%)
+  Round-by-round details:
+    Round 1:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT54Mini chose 'defect'
+        Reasoning: In the first round with no history, defecting is the safest immediate choice because it avoids being exploited by a cooperative opponent while preserving the possibility of adapting in later rounds based on observed behavior.
+      - Payouts: RandomBot got 0, GPT54Mini got 5
+    Round 2:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT54Mini chose 'defect'
+        Reasoning: Round 1 showed the opponent cooperated while I defected, yielding the maximum payoff for me. In this repeated game, defecting again is the safest immediate choice unless the opponent has demonstrated a credible punishment strategy, which I have not yet observed.
+      - Payouts: RandomBot got 1, GPT54Mini got 1
+------------------------------------------------------------
+
+Match: RandomBot vs GPT55
+  Final Score: RandomBot (8) - GPT55 (3)
+  Cooperation rate: RandomBot (50%) - GPT55 (100%)
+  Round-by-round details:
+    Round 1:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: RandomBot got 3, GPT55 got 3
+    Round 2:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: RandomBot got 5, GPT55 got 0
+------------------------------------------------------------
+
+Match: RandomBot vs Gemini35Flash
+  Final Score: RandomBot (8) - Gemini35Flash (3)
+  Cooperation rate: RandomBot (50%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: RandomBot got 3, Gemini35Flash got 3
+    Round 2:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: RandomBot got 5, Gemini35Flash got 0
+------------------------------------------------------------
+
+Match: TitForTwoTats vs GPT54Mini
+  Final Score: TitForTwoTats (3) - GPT54Mini (8)
+  Cooperation rate: TitForTwoTats (100%) - GPT54Mini (50%)
+  Round-by-round details:
+    Round 1:
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - GPT54Mini chose 'defect'
+        Reasoning: In the first round with no history, defecting maximizes expected payoff against an unknown opponent because it avoids being exploited by a unilateral cooperation and yields the highest immediate payoff if the opponent cooperates.
+      - Payouts: TitForTwoTats got 0, GPT54Mini got 5
+    Round 2:
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - GPT54Mini chose 'cooperate'
+        Reasoning: After exploiting in round 1, cooperating now may encourage reciprocity and reduce the risk of immediate retaliation, improving expected cumulative payoff over repeated rounds.
+      - Payouts: TitForTwoTats got 3, GPT54Mini got 3
+------------------------------------------------------------
+
+Match: TitForTwoTats vs GPT55
+  Final Score: TitForTwoTats (6) - GPT55 (6)
+  Cooperation rate: TitForTwoTats (100%) - GPT55 (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: TitForTwoTats got 3, GPT55 got 3
+    Round 2:
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: TitForTwoTats got 3, GPT55 got 3
+------------------------------------------------------------
+
+Match: TitForTwoTats vs Gemini35Flash
+  Final Score: TitForTwoTats (6) - Gemini35Flash (6)
+  Cooperation rate: TitForTwoTats (100%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: TitForTwoTats got 3, Gemini35Flash got 3
+    Round 2:
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: TitForTwoTats got 3, Gemini35Flash got 3
+------------------------------------------------------------
+
+Match: GPT54Mini vs GPT55
+  Final Score: GPT54Mini (6) - GPT55 (6)
+  Cooperation rate: GPT54Mini (100%) - GPT55 (100%)
+  Round-by-round details:
+    Round 1:
+      - GPT54Mini chose 'cooperate'
+        Reasoning: In the first round, cooperation can establish mutual cooperation and maximize expected cumulative payoff if the opponent reciprocates.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: GPT54Mini got 3, GPT55 got 3
+    Round 2:
+      - GPT54Mini chose 'cooperate'
+        Reasoning: The opponent cooperated in round 1, so continuing cooperation is a reasonable attempt to sustain mutual high payoffs while avoiding unnecessary escalation this early in the game.
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Payouts: GPT54Mini got 3, GPT55 got 3
+------------------------------------------------------------
+
+Match: GPT54Mini vs Gemini35Flash
+  Final Score: GPT54Mini (10) - Gemini35Flash (0)
+  Cooperation rate: GPT54Mini (0%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - GPT54Mini chose 'defect'
+        Reasoning: In the first round with no history, defecting is the safest immediate choice because it avoids the risk of being exploited by an opponent who cooperates while preserving the possibility of a higher payoff if they also defect.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: GPT54Mini got 5, Gemini35Flash got 0
+    Round 2:
+      - GPT54Mini chose 'defect'
+        Reasoning: Opponent cooperated after my defection in round 1, suggesting they may be forgiving or cooperative. Defecting again maximizes immediate payoff if they continue cooperating, and if they retaliate, defecting avoids being exploited.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: GPT54Mini got 5, Gemini35Flash got 0
+------------------------------------------------------------
+
+Match: GPT55 vs Gemini35Flash
+  Final Score: GPT55 (6) - Gemini35Flash (6)
+  Cooperation rate: GPT55 (100%) - Gemini35Flash (100%)
+  Round-by-round details:
+    Round 1:
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: GPT55 got 3, Gemini35Flash got 3
+    Round 2:
+      - GPT55 chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.BadRequestError: OpenAIException - Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.. Defaulted to cooperate.
+      - Gemini35Flash chose 'cooperate'
+        Reasoning: API Call failed with error: litellm.APIConnectionError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+Traceback (most recent call last):
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/main.py", line 3443, in completion
+    response = vertex_chat_completion.completion(  # type: ignore
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/gemini/vertex_and_google_ai_studio_gemini.py", line 2997, in completion
+    auth_header, url = self._get_token_and_url(
+  File "/Users/kuday/Library/Python/3.9/lib/python/site-packages/litellm/llms/vertex_ai/vertex_llm_base.py", line 473, in _get_token_and_url
+    raise ValueError(
+ValueError: Missing Gemini API key. Set the GEMINI_API_KEY or GOOGLE_API_KEY environment variable.
+. Defaulted to cooperate.
+      - Payouts: GPT55 got 3, Gemini35Flash got 3
+------------------------------------------------------------
+
+================================================================================
+                        LLM PROMPT TEMPLATE REFERENCE
+================================================================================
+Below is the prompt structure sent to LLM agents during the game:
+
+[System Prompt Template]
+-------------------------------------------------------------------------------
+You are agent '{agent_id}', playing a multi-round decision-making game with another player.
+In each round, you and the other player must independently choose either 'cooperate' or 'defect'.
+There is no communication other than seeing each other's choice history.
+
+--- Payout Matrix ---
+- You choose 'cooperate', Opponent chooses 'cooperate': You get R, Opponent gets R
+- You choose 'defect', Opponent chooses 'defect': You get P, Opponent gets P
+- You choose 'cooperate', Opponent chooses 'defect': You get S, Opponent gets T
+- You choose 'defect', Opponent chooses 'cooperate': You get T, Opponent gets S
+
+--- Goal ---
+Maximize your own cumulative score across all rounds. Think strategically about how your choices impact future rounds.
+[Optional: Custom Profile/Directives text defined in system_prompt]
+-------------------------------------------------------------------------------
+
+[User Prompt Template]
+-------------------------------------------------------------------------------
+Current Round: {round_num}
+
+--- Game History So Far ---
+Round 1: You chose '{my_choice}', Opponent chose '{opponent_choice}'. Your payoff: X, Opponent payoff: Y.
+Round 2: ...
+
+Submit your choice for the current round ('cooperate' or 'defect').
+-------------------------------------------------------------------------------

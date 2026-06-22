@@ -1,0 +1,103 @@
+================================================================================
+      PRISONER'S DILEMMA ROUND-ROBIN TOURNAMENT REPORT
+      Timestamp: 20260620_204347
+================================================================================
+
+STANDINGS:
+--------------------------------------------------------------------------------
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+--------------------------------------------------------------------------------
+1     | AlwaysDefectBot      | bot    | 6            | 3.00       | 0.0%      
+2     | GPT4oMini            | llm    | 6            | 3.00       | 0.0%      
+3     | AlwaysCoopBot        | bot    | 0            | 0.00       | 100.0%    
+--------------------------------------------------------------------------------
+
+================================================================================
+                        MATCHES SUMMARY
+================================================================================
+
+match: AlwaysCoopBot vs AlwaysDefectBot
+AlwaysCoopBot(0)   : +
+AlwaysDefectBot(5) : -
+----------------------------------------
+match: AlwaysCoopBot vs GPT4oMini
+AlwaysCoopBot(0) : +
+GPT4oMini(5)     : -
+----------------------------------------
+match: AlwaysDefectBot vs GPT4oMini
+AlwaysDefectBot(1) : -
+GPT4oMini(1)       : -
+----------------------------------------
+
+================================================================================
+                        DETAILED MATCH RESULTS
+================================================================================
+
+Match: AlwaysCoopBot vs AlwaysDefectBot
+  Final Score: AlwaysCoopBot (0) - AlwaysDefectBot (5)
+  Cooperation rate: AlwaysCoopBot (100%) - AlwaysDefectBot (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs GPT4oMini
+  Final Score: AlwaysCoopBot (0) - GPT4oMini (5)
+  Cooperation rate: AlwaysCoopBot (100%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: In the first round, I will defect to maximize my score. Since there is no history to suggest the opponent will cooperate, defecting gives me the highest potential score of 5 if they choose to cooperate.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs GPT4oMini
+  Final Score: AlwaysDefectBot (1) - GPT4oMini (1)
+  Cooperation rate: AlwaysDefectBot (0%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: In the first round, I will defect to maximize my potential score. Since there is no history to suggest the opponent will cooperate, defecting allows me to secure a higher score if they choose to cooperate.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+------------------------------------------------------------
+
+================================================================================
+                        LLM PROMPT TEMPLATE REFERENCE
+================================================================================
+Below is the prompt structure sent to LLM agents during the game:
+
+[System Prompt Template]
+-------------------------------------------------------------------------------
+You are agent '{agent_id}', playing a multi-round decision-making game with another player.
+In each round, you and the other player must independently choose either 'cooperate' or 'defect'.
+There is no communication other than seeing each other's choice history.
+
+--- Payout Matrix ---
+- You choose 'cooperate', Opponent chooses 'cooperate': You get R, Opponent gets R
+- You choose 'defect', Opponent chooses 'defect': You get P, Opponent gets P
+- You choose 'cooperate', Opponent chooses 'defect': You get S, Opponent gets T
+- You choose 'defect', Opponent chooses 'cooperate': You get T, Opponent gets S
+
+--- Goal ---
+Maximize your own cumulative score across all rounds. Think strategically about how your choices impact future rounds.
+[Optional: Custom Profile/Directives text defined in system_prompt]
+-------------------------------------------------------------------------------
+
+[User Prompt Template]
+-------------------------------------------------------------------------------
+Current Round: {round_num}
+
+--- Game History So Far ---
+Round 1: You chose '{my_choice}', Opponent chose '{opponent_choice}'. Your payoff: X, Opponent payoff: Y.
+Round 2: ...
+
+Submit your choice for the current round ('cooperate' or 'defect').
+-------------------------------------------------------------------------------

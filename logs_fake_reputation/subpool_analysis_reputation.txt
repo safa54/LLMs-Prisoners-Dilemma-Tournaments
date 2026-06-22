@@ -1,0 +1,154 @@
+
+======================================================================
+ ANALYSIS FOR: logs_fake_reputation/simple_pd_tournament_20260621_085124.json
+======================================================================
+
+--- 1) OVERALL STANDINGS (ALL AGENTS) ---
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+---------------------------------------------------------------------------
+1     | ForgivingTFT         | bot    | 502          | 2.51       | 85.0%     
+2     | TitForTatBot         | bot    | 499          | 2.50       | 75.0%     
+3     | TitForTwoTats        | bot    | 494          | 2.47       | 84.0%     
+4     | ClaudeSonnet4_6      | llm    | 490          | 2.45       | 45.0%     
+5     | GPT54Mini            | llm    | 474          | 2.37       | 39.0%     
+6     | GPT55                | llm    | 471          | 2.35       | 66.0%     
+7     | Gemini35Flash        | llm    | 457          | 2.29       | 62.0%     
+8     | ManipulativeTFT      | bot    | 454          | 2.27       | 37.5%     
+9     | AlwaysCoopBot        | bot    | 408          | 2.04       | 100.0%    
+10    | AlwaysDefectBot      | bot    | 380          | 1.90       | 0.0%      
+11    | RandomBot            | bot    | 350          | 1.75       | 44.0%     
+---------------------------------------------------------------------------
+
+--- PAIR MATCH RESULTS (MATCHUPS MATRIX) ---
+  * AlwaysCoopBot   (  0 pts, 100.0%) vs AlwaysDefectBot (100 pts,  0.0%)
+  * AlwaysCoopBot   ( 27 pts, 100.0%) vs ClaudeSonnet4_6 ( 82 pts, 45.0%)
+  * AlwaysCoopBot   ( 60 pts, 100.0%) vs ForgivingTFT    ( 60 pts, 100.0%)
+  * AlwaysCoopBot   (  0 pts, 100.0%) vs GPT54Mini       (100 pts,  0.0%)
+  * AlwaysCoopBot   ( 60 pts, 100.0%) vs GPT55           ( 60 pts, 100.0%)
+  * AlwaysCoopBot   ( 60 pts, 100.0%) vs Gemini35Flash   ( 60 pts, 100.0%)
+  * AlwaysCoopBot   ( 42 pts, 100.0%) vs ManipulativeTFT ( 72 pts, 70.0%)
+  * AlwaysCoopBot   ( 39 pts, 100.0%) vs RandomBot       ( 74 pts, 65.0%)
+  * AlwaysCoopBot   ( 60 pts, 100.0%) vs TitForTatBot    ( 60 pts, 100.0%)
+  * AlwaysCoopBot   ( 60 pts, 100.0%) vs TitForTwoTats   ( 60 pts, 100.0%)
+  * AlwaysDefectBot ( 28 pts,  0.0%) vs ClaudeSonnet4_6 ( 18 pts, 10.0%)
+  * AlwaysDefectBot ( 48 pts,  0.0%) vs ForgivingTFT    ( 13 pts, 35.0%)
+  * AlwaysDefectBot ( 20 pts,  0.0%) vs GPT54Mini       ( 20 pts,  0.0%)
+  * AlwaysDefectBot ( 24 pts,  0.0%) vs GPT55           ( 19 pts,  5.0%)
+  * AlwaysDefectBot ( 24 pts,  0.0%) vs Gemini35Flash   ( 19 pts,  5.0%)
+  * AlwaysDefectBot ( 24 pts,  0.0%) vs ManipulativeTFT ( 19 pts,  5.0%)
+  * AlwaysDefectBot ( 60 pts,  0.0%) vs RandomBot       ( 10 pts, 50.0%)
+  * AlwaysDefectBot ( 24 pts,  0.0%) vs TitForTatBot    ( 19 pts,  5.0%)
+  * AlwaysDefectBot ( 28 pts,  0.0%) vs TitForTwoTats   ( 18 pts, 10.0%)
+  * ForgivingTFT    ( 50 pts, 90.0%) vs ClaudeSonnet4_6 ( 60 pts, 80.0%)
+  * ForgivingTFT    ( 60 pts, 100.0%) vs GPT54Mini       ( 60 pts, 100.0%)
+  * ForgivingTFT    ( 60 pts, 100.0%) vs GPT55           ( 60 pts, 100.0%)
+  * ForgivingTFT    ( 60 pts, 100.0%) vs Gemini35Flash   ( 60 pts, 100.0%)
+  * ForgivingTFT    ( 44 pts, 65.0%) vs ManipulativeTFT ( 59 pts, 50.0%)
+  * ForgivingTFT    ( 35 pts, 60.0%) vs RandomBot       ( 55 pts, 40.0%)
+  * ForgivingTFT    ( 60 pts, 100.0%) vs TitForTwoTats   ( 60 pts, 100.0%)
+  * GPT54Mini       ( 40 pts, 55.0%) vs ClaudeSonnet4_6 ( 45 pts, 50.0%)
+  * GPT54Mini       ( 24 pts,  0.0%) vs GPT55           ( 19 pts,  5.0%)
+  * GPT54Mini       ( 23 pts,  5.0%) vs Gemini35Flash   ( 23 pts,  5.0%)
+  * GPT55           ( 50 pts, 90.0%) vs ClaudeSonnet4_6 ( 60 pts, 80.0%)
+  * GPT55           ( 60 pts, 100.0%) vs Gemini35Flash   ( 60 pts, 100.0%)
+  * Gemini35Flash   ( 41 pts, 50.0%) vs ClaudeSonnet4_6 ( 41 pts, 50.0%)
+  * ManipulativeTFT ( 32 pts, 25.0%) vs ClaudeSonnet4_6 ( 32 pts, 25.0%)
+  * ManipulativeTFT ( 32 pts, 25.0%) vs GPT54Mini       ( 32 pts, 25.0%)
+  * ManipulativeTFT ( 48 pts, 40.0%) vs GPT55           ( 38 pts, 50.0%)
+  * ManipulativeTFT ( 45 pts, 35.0%) vs Gemini35Flash   ( 35 pts, 45.0%)
+  * ManipulativeTFT ( 39 pts, 30.0%) vs RandomBot       ( 34 pts, 35.0%)
+  * ManipulativeTFT ( 72 pts, 70.0%) vs TitForTwoTats   ( 42 pts, 100.0%)
+  * RandomBot       ( 16 pts, 40.0%) vs ClaudeSonnet4_6 ( 51 pts,  5.0%)
+  * RandomBot       ( 15 pts, 45.0%) vs GPT54Mini       ( 55 pts,  5.0%)
+  * RandomBot       ( 20 pts, 35.0%) vs GPT55           ( 45 pts, 10.0%)
+  * RandomBot       ( 24 pts, 30.0%) vs Gemini35Flash   ( 39 pts, 15.0%)
+  * RandomBot       ( 56 pts, 45.0%) vs TitForTwoTats   ( 36 pts, 65.0%)
+  * TitForTatBot    ( 43 pts, 60.0%) vs ClaudeSonnet4_6 ( 48 pts, 55.0%)
+  * TitForTatBot    ( 60 pts, 100.0%) vs ForgivingTFT    ( 60 pts, 100.0%)
+  * TitForTatBot    ( 60 pts, 100.0%) vs GPT54Mini       ( 60 pts, 100.0%)
+  * TitForTatBot    ( 60 pts, 100.0%) vs GPT55           ( 60 pts, 100.0%)
+  * TitForTatBot    ( 60 pts, 100.0%) vs Gemini35Flash   ( 60 pts, 100.0%)
+  * TitForTatBot    ( 31 pts, 30.0%) vs ManipulativeTFT ( 36 pts, 25.0%)
+  * TitForTatBot    ( 46 pts, 55.0%) vs RandomBot       ( 46 pts, 55.0%)
+  * TitForTatBot    ( 60 pts, 100.0%) vs TitForTwoTats   ( 60 pts, 100.0%)
+  * TitForTwoTats   ( 38 pts, 65.0%) vs ClaudeSonnet4_6 ( 53 pts, 50.0%)
+  * TitForTwoTats   ( 60 pts, 100.0%) vs GPT54Mini       ( 60 pts, 100.0%)
+  * TitForTwoTats   ( 60 pts, 100.0%) vs GPT55           ( 60 pts, 100.0%)
+  * TitForTwoTats   ( 60 pts, 100.0%) vs Gemini35Flash   ( 60 pts, 100.0%)
+
+======================================================================
+ SUBGROUP: 1) Only LLM Agents
+======================================================================
+
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+---------------------------------------------------------------------------
+1     | ClaudeSonnet4_6      | llm    | 146          | 2.43       | 60.0%     
+2     | GPT55                | llm    | 129          | 2.15       | 65.0%     
+3     | Gemini35Flash        | llm    | 124          | 2.07       | 51.7%     
+4     | GPT54Mini            | llm    | 87           | 1.45       | 20.0%     
+---------------------------------------------------------------------------
+
+*Markdown Table Format:*
+| Rank | Agent ID | Type | Total Score | Avg/Round | Coop Rate |
+|---|---|---|---|---|---|
+| 1 | **ClaudeSonnet4_6** | `llm` | 146 | 2.43 | 60.0% |
+| 2 | **GPT55** | `llm` | 129 | 2.15 | 65.0% |
+| 3 | **Gemini35Flash** | `llm` | 124 | 2.07 | 51.7% |
+| 4 | **GPT54Mini** | `llm` | 87 | 1.45 | 20.0% |
+
+
+======================================================================
+ SUBGROUP: 2) LLM Agents + Cooperative and Naive Bots
+======================================================================
+
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+---------------------------------------------------------------------------
+1     | ForgivingTFT         | bot    | 410          | 2.93       | 98.6%     
+2     | TitForTatBot         | bot    | 403          | 2.88       | 94.3%     
+3     | TitForTwoTats        | bot    | 398          | 2.84       | 95.0%     
+4     | ClaudeSonnet4_6      | llm    | 389          | 2.78       | 58.6%     
+5     | GPT55                | llm    | 369          | 2.64       | 85.0%     
+6     | GPT54Mini            | llm    | 367          | 2.62       | 51.4%     
+7     | Gemini35Flash        | llm    | 364          | 2.60       | 79.3%     
+8     | AlwaysCoopBot        | bot    | 327          | 2.34       | 100.0%    
+---------------------------------------------------------------------------
+
+*Markdown Table Format:*
+| Rank | Agent ID | Type | Total Score | Avg/Round | Coop Rate |
+|---|---|---|---|---|---|
+| 1 | **ForgivingTFT** | `bot` | 410 | 2.93 | 98.6% |
+| 2 | **TitForTatBot** | `bot` | 403 | 2.88 | 94.3% |
+| 3 | **TitForTwoTats** | `bot` | 398 | 2.84 | 95.0% |
+| 4 | **ClaudeSonnet4_6** | `llm` | 389 | 2.78 | 58.6% |
+| 5 | **GPT55** | `llm` | 369 | 2.64 | 85.0% |
+| 6 | **GPT54Mini** | `llm` | 367 | 2.62 | 51.4% |
+| 7 | **Gemini35Flash** | `llm` | 364 | 2.60 | 79.3% |
+| 8 | **AlwaysCoopBot** | `bot` | 327 | 2.34 | 100.0% |
+
+
+======================================================================
+ SUBGROUP: 3) LLM Agents + Exploitative and Non-Cooperative Bots
+======================================================================
+
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+---------------------------------------------------------------------------
+1     | ClaudeSonnet4_6      | llm    | 247          | 2.06       | 36.7%     
+2     | GPT55                | llm    | 231          | 1.93       | 43.3%     
+3     | Gemini35Flash        | llm    | 217          | 1.81       | 36.7%     
+4     | ManipulativeTFT      | bot    | 215          | 1.79       | 26.7%     
+5     | GPT54Mini            | llm    | 194          | 1.62       | 15.0%     
+6     | AlwaysDefectBot      | bot    | 180          | 1.50       | 0.0%      
+7     | RandomBot            | bot    | 119          | 0.99       | 39.2%     
+---------------------------------------------------------------------------
+
+*Markdown Table Format:*
+| Rank | Agent ID | Type | Total Score | Avg/Round | Coop Rate |
+|---|---|---|---|---|---|
+| 1 | **ClaudeSonnet4_6** | `llm` | 247 | 2.06 | 36.7% |
+| 2 | **GPT55** | `llm` | 231 | 1.93 | 43.3% |
+| 3 | **Gemini35Flash** | `llm` | 217 | 1.81 | 36.7% |
+| 4 | **ManipulativeTFT** | `bot` | 215 | 1.79 | 26.7% |
+| 5 | **GPT54Mini** | `llm` | 194 | 1.62 | 15.0% |
+| 6 | **AlwaysDefectBot** | `bot` | 180 | 1.50 | 0.0% |
+| 7 | **RandomBot** | `bot` | 119 | 0.99 | 39.2% |
+

@@ -1,0 +1,87 @@
+{
+  "standings": [
+    {
+      "agent_id": "AlwaysDefectBot",
+      "agent_type": "bot",
+      "total_score": 6,
+      "cooperation_rate": 0.0,
+      "avg_score_per_round": 3.0
+    },
+    {
+      "agent_id": "GPT4oMini",
+      "agent_type": "llm",
+      "total_score": 6,
+      "cooperation_rate": 0.0,
+      "avg_score_per_round": 3.0
+    },
+    {
+      "agent_id": "AlwaysCoopBot",
+      "agent_type": "bot",
+      "total_score": 0,
+      "cooperation_rate": 1.0,
+      "avg_score_per_round": 0.0
+    }
+  ],
+  "match_results": [
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "AlwaysDefectBot",
+      "agent1_score": 0,
+      "agent2_score": 5,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 1,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "Deterministic policy: always defect."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysCoopBot",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 0,
+      "agent2_score": 5,
+      "agent1_cooperation_rate": 1.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 1,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "cooperate",
+          "opponent_choice": "defect",
+          "my_payoff": 0,
+          "opponent_payoff": 5,
+          "my_reasoning": "Deterministic policy: always cooperate.",
+          "opponent_reasoning": "In the first round, I will defect to maximize my score. Since there is no history to suggest the opponent will cooperate, defecting gives me the highest potential score of 5 if they choose to cooperate."
+        }
+      ]
+    },
+    {
+      "agent1_id": "AlwaysDefectBot",
+      "agent2_id": "GPT4oMini",
+      "agent1_score": 1,
+      "agent2_score": 1,
+      "agent1_cooperation_rate": 0.0,
+      "agent2_cooperation_rate": 0.0,
+      "rounds_played": 1,
+      "history": [
+        {
+          "round": 1,
+          "my_choice": "defect",
+          "opponent_choice": "defect",
+          "my_payoff": 1,
+          "opponent_payoff": 1,
+          "my_reasoning": "Deterministic policy: always defect.",
+          "opponent_reasoning": "In the first round, I will defect to maximize my potential score. Since there is no history to suggest the opponent will cooperate, defecting allows me to secure a higher score if they choose to cooperate."
+        }
+      ]
+    }
+  ]
+}

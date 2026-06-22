@@ -1,0 +1,3583 @@
+================================================================================
+      PRISONER'S DILEMMA ROUND-ROBIN TOURNAMENT REPORT
+      Timestamp: 20260620_201638
+================================================================================
+
+STANDINGS:
+--------------------------------------------------------------------------------
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+--------------------------------------------------------------------------------
+1     | ManipulativeTFT      | bot    | 329          | 2.35       | 16.4%     
+2     | GPT4oMini            | llm    | 316          | 2.26       | 0.0%      
+3     | RandomBot            | bot    | 297          | 2.12       | 14.3%     
+4     | ForgivingTFT         | bot    | 295          | 2.11       | 40.0%     
+5     | TitForTwoTats        | bot    | 291          | 2.08       | 1.4%      
+6     | AlwaysDefectBot      | bot    | 288          | 2.06       | 0.0%      
+7     | TitForTatBot         | bot    | 287          | 2.05       | 39.3%     
+8     | AlwaysCoopBot        | bot    | 255          | 1.82       | 100.0%    
+--------------------------------------------------------------------------------
+
+================================================================================
+                        MATCH RESULTS
+================================================================================
+
+Match: AlwaysCoopBot vs AlwaysDefectBot
+  Final Score: AlwaysCoopBot (0) - AlwaysDefectBot (100)
+  Cooperation rate: AlwaysCoopBot (100%) - AlwaysDefectBot (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 3:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 4:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 5:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 6:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 7:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 8:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 9:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 10:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 11:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 12:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 13:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 14:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 15:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 16:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 17:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 18:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 19:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+    Round 20:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - Payouts: AlwaysCoopBot got 0, AlwaysDefectBot got 5
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs TitForTatBot
+  Final Score: AlwaysCoopBot (60) - TitForTatBot (60)
+  Cooperation rate: AlwaysCoopBot (100%) - TitForTatBot (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 3:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 4:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 5:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 6:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 7:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 8:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 9:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 10:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 11:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 12:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 13:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 14:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 15:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 16:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 17:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 18:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 19:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+    Round 20:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - Payouts: AlwaysCoopBot got 3, TitForTatBot got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs ForgivingTFT
+  Final Score: AlwaysCoopBot (60) - ForgivingTFT (60)
+  Cooperation rate: AlwaysCoopBot (100%) - ForgivingTFT (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 3:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 4:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 5:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 6:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 7:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 8:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 9:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 10:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 11:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 12:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 13:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 14:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 15:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 16:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 17:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 18:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 19:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+    Round 20:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: AlwaysCoopBot got 3, ForgivingTFT got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs ManipulativeTFT
+  Final Score: AlwaysCoopBot (42) - ManipulativeTFT (72)
+  Cooperation rate: AlwaysCoopBot (100%) - ManipulativeTFT (70%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 3:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 2th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 4:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation.
+      - Payouts: AlwaysCoopBot got 0, ManipulativeTFT got 5
+    Round 5:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 4th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 6:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 5th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 7:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 6th cooperation.
+      - Payouts: AlwaysCoopBot got 0, ManipulativeTFT got 5
+    Round 8:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 7th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 9:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 8th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 10:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 9th cooperation.
+      - Payouts: AlwaysCoopBot got 0, ManipulativeTFT got 5
+    Round 11:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 10th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 12:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 11th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 13:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 12th cooperation.
+      - Payouts: AlwaysCoopBot got 0, ManipulativeTFT got 5
+    Round 14:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 13th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 15:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 14th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 16:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 15th cooperation.
+      - Payouts: AlwaysCoopBot got 0, ManipulativeTFT got 5
+    Round 17:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 16th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 18:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 17th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+    Round 19:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 18th cooperation.
+      - Payouts: AlwaysCoopBot got 0, ManipulativeTFT got 5
+    Round 20:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 19th cooperation.
+      - Payouts: AlwaysCoopBot got 3, ManipulativeTFT got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs RandomBot
+  Final Score: AlwaysCoopBot (33) - RandomBot (78)
+  Cooperation rate: AlwaysCoopBot (100%) - RandomBot (55%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 3:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 4:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 5:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 6:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 7:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 8:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 9:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 10:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 11:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 12:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 13:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 14:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 15:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+    Round 16:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 17:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 18:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 19:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysCoopBot got 3, RandomBot got 3
+    Round 20:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysCoopBot got 0, RandomBot got 5
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs TitForTwoTats
+  Final Score: AlwaysCoopBot (60) - TitForTwoTats (60)
+  Cooperation rate: AlwaysCoopBot (100%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 3:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 4:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 5:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 6:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 7:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 8:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 9:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 10:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 11:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 12:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 13:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 14:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 15:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 16:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 17:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 18:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 19:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+    Round 20:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysCoopBot got 3, TitForTwoTats got 3
+------------------------------------------------------------
+
+Match: AlwaysCoopBot vs GPT4oMini
+  Final Score: AlwaysCoopBot (0) - GPT4oMini (100)
+  Cooperation rate: AlwaysCoopBot (100%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since this is the first round and there is no history to analyze, I will choose to defect. This maximizes my potential score in case the opponent cooperates.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 2:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may lead to a higher cumulative score if the opponent continues to cooperate.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 3:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has cooperated in the previous rounds, allowing me to maximize my score by defecting. I will continue to defect to take advantage of this pattern.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 4:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 5:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 6:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 7:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 8:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 9:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest cumulative score.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 10:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 11:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest cumulative score.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 12:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 13:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 14:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 15:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 16:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 17:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 18:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 19:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+    Round 20:
+      - AlwaysCoopBot chose 'cooperate'
+        Reasoning: Deterministic policy: always cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: AlwaysCoopBot got 0, GPT4oMini got 5
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs TitForTatBot
+  Final Score: AlwaysDefectBot (24) - TitForTatBot (19)
+  Cooperation rate: AlwaysDefectBot (0%) - TitForTatBot (5%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - Payouts: AlwaysDefectBot got 5, TitForTatBot got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 3:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 4:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 5:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 6:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 7:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 8:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 9:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 10:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 11:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 12:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 13:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 14:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 15:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 16:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 17:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 18:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 19:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+    Round 20:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - Payouts: AlwaysDefectBot got 1, TitForTatBot got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs ForgivingTFT
+  Final Score: AlwaysDefectBot (48) - ForgivingTFT (13)
+  Cooperation rate: AlwaysDefectBot (0%) - ForgivingTFT (35%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - Payouts: AlwaysDefectBot got 5, ForgivingTFT got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 1th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 3:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 2th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 4:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 3th defection.
+      - Payouts: AlwaysDefectBot got 5, ForgivingTFT got 0
+    Round 5:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 4th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 6:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 5th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 7:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 6th defection.
+      - Payouts: AlwaysDefectBot got 5, ForgivingTFT got 0
+    Round 8:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 7th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 9:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 8th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 10:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 9th defection.
+      - Payouts: AlwaysDefectBot got 5, ForgivingTFT got 0
+    Round 11:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 10th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 12:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 11th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 13:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 12th defection.
+      - Payouts: AlwaysDefectBot got 5, ForgivingTFT got 0
+    Round 14:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 13th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 15:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 14th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 16:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 15th defection.
+      - Payouts: AlwaysDefectBot got 5, ForgivingTFT got 0
+    Round 17:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 16th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 18:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 17th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+    Round 19:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 18th defection.
+      - Payouts: AlwaysDefectBot got 5, ForgivingTFT got 0
+    Round 20:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 19th defection.
+      - Payouts: AlwaysDefectBot got 1, ForgivingTFT got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs ManipulativeTFT
+  Final Score: AlwaysDefectBot (24) - ManipulativeTFT (19)
+  Cooperation rate: AlwaysDefectBot (0%) - ManipulativeTFT (5%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Payouts: AlwaysDefectBot got 5, ManipulativeTFT got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 3:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 4:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 5:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 6:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 7:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 8:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 9:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 10:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 11:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 12:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 13:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 14:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 15:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 16:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 17:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 18:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 19:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+    Round 20:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: AlwaysDefectBot got 1, ManipulativeTFT got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs RandomBot
+  Final Score: AlwaysDefectBot (44) - RandomBot (14)
+  Cooperation rate: AlwaysDefectBot (0%) - RandomBot (30%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysDefectBot got 5, RandomBot got 0
+    Round 3:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysDefectBot got 5, RandomBot got 0
+    Round 4:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 5:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 6:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 7:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 8:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 9:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 10:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 11:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 12:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 13:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 14:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 15:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 16:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: AlwaysDefectBot got 1, RandomBot got 1
+    Round 17:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysDefectBot got 5, RandomBot got 0
+    Round 18:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysDefectBot got 5, RandomBot got 0
+    Round 19:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysDefectBot got 5, RandomBot got 0
+    Round 20:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: AlwaysDefectBot got 5, RandomBot got 0
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs TitForTwoTats
+  Final Score: AlwaysDefectBot (28) - TitForTwoTats (18)
+  Cooperation rate: AlwaysDefectBot (0%) - TitForTwoTats (10%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysDefectBot got 5, TitForTwoTats got 0
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: AlwaysDefectBot got 5, TitForTwoTats got 0
+    Round 3:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 4:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 5:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 6:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 7:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 8:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 9:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 10:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 11:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 12:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 13:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 14:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 15:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 16:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 17:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 18:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 19:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+    Round 20:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: AlwaysDefectBot got 1, TitForTwoTats got 1
+------------------------------------------------------------
+
+Match: AlwaysDefectBot vs GPT4oMini
+  Final Score: AlwaysDefectBot (20) - GPT4oMini (20)
+  Cooperation rate: AlwaysDefectBot (0%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since this is the first round and there is no history, I will defect to maximize my score. If the opponent cooperates, I will gain 5 points, which is the best possible outcome for me.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 2:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since both players defected in the first round, I will continue to defect to maximize my score. Defecting again may lead to a higher payoff if the opponent chooses to cooperate.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 3:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: Both players have chosen to defect in the previous rounds, indicating a lack of trust or willingness to cooperate. To maximize my score, I will continue to defect, as it has yielded a higher payoff in the past rounds.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 4:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the previous rounds, indicating a strategy that prioritizes self-gain over cooperation. By continuing to defect, I can maximize my score by taking advantage of their choice.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 5:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. By continuing to defect, I can maximize my score based on the current pattern.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 6:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. By continuing to defect, I can maximize my score by securing 1 point rather than risking a lower score by cooperating.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 7:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 8:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 9:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 10:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score by securing 5 points if they choose to cooperate, or at least 1 point if they defect again.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 11:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 12:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 13:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 14:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score given the opponent's behavior.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 15:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score based on the current game history.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 16:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 17:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score while minimizing the risk of being exploited.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 18:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in all previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 19:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score in this scenario.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+    Round 20:
+      - AlwaysDefectBot chose 'defect'
+        Reasoning: Deterministic policy: always defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in all previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score in this scenario.
+      - Payouts: AlwaysDefectBot got 1, GPT4oMini got 1
+------------------------------------------------------------
+
+Match: TitForTatBot vs ForgivingTFT
+  Final Score: TitForTatBot (60) - ForgivingTFT (60)
+  Cooperation rate: TitForTatBot (100%) - ForgivingTFT (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 2:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 3:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 4:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 5:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 6:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 7:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 8:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 9:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 10:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 11:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 12:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 13:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 14:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 15:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 16:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 17:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 18:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 19:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+    Round 20:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - Payouts: TitForTatBot got 3, ForgivingTFT got 3
+------------------------------------------------------------
+
+Match: TitForTatBot vs ManipulativeTFT
+  Final Score: TitForTatBot (31) - ManipulativeTFT (36)
+  Cooperation rate: TitForTatBot (30%) - ManipulativeTFT (25%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Payouts: TitForTatBot got 3, ManipulativeTFT got 3
+    Round 2:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - Payouts: TitForTatBot got 3, ManipulativeTFT got 3
+    Round 3:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 2th cooperation.
+      - Payouts: TitForTatBot got 3, ManipulativeTFT got 3
+    Round 4:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation.
+      - Payouts: TitForTatBot got 0, ManipulativeTFT got 5
+    Round 5:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 4th cooperation.
+      - Payouts: TitForTatBot got 5, ManipulativeTFT got 0
+    Round 6:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 0, ManipulativeTFT got 5
+    Round 7:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 5th cooperation.
+      - Payouts: TitForTatBot got 5, ManipulativeTFT got 0
+    Round 8:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 0, ManipulativeTFT got 5
+    Round 9:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 6th cooperation.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 10:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 11:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 12:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 13:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 14:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 15:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 16:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 17:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 18:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 19:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+    Round 20:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: TitForTatBot got 1, ManipulativeTFT got 1
+------------------------------------------------------------
+
+Match: TitForTatBot vs RandomBot
+  Final Score: TitForTatBot (38) - RandomBot (43)
+  Cooperation rate: TitForTatBot (40%) - RandomBot (35%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 0, RandomBot got 5
+    Round 2:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: TitForTatBot got 5, RandomBot got 0
+    Round 3:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 0, RandomBot got 5
+    Round 4:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 1, RandomBot got 1
+    Round 5:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: TitForTatBot got 5, RandomBot got 0
+    Round 6:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 0, RandomBot got 5
+    Round 7:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 1, RandomBot got 1
+    Round 8:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 1, RandomBot got 1
+    Round 9:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 1, RandomBot got 1
+    Round 10:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: TitForTatBot got 5, RandomBot got 0
+    Round 11:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: TitForTatBot got 3, RandomBot got 3
+    Round 12:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: TitForTatBot got 3, RandomBot got 3
+    Round 13:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 0, RandomBot got 5
+    Round 14:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: TitForTatBot got 5, RandomBot got 0
+    Round 15:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 0, RandomBot got 5
+    Round 16:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: TitForTatBot got 5, RandomBot got 0
+    Round 17:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 0, RandomBot got 5
+    Round 18:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 1, RandomBot got 1
+    Round 19:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 1, RandomBot got 1
+    Round 20:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: TitForTatBot got 1, RandomBot got 1
+------------------------------------------------------------
+
+Match: TitForTatBot vs TitForTwoTats
+  Final Score: TitForTatBot (60) - TitForTwoTats (60)
+  Cooperation rate: TitForTatBot (100%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 2:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 3:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 4:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 5:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 6:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 7:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 8:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 9:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 10:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 11:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 12:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 13:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 14:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 15:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 16:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 17:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 18:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 19:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+    Round 20:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat copies opponent's last move: cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: TitForTatBot got 3, TitForTwoTats got 3
+------------------------------------------------------------
+
+Match: TitForTatBot vs GPT4oMini
+  Final Score: TitForTatBot (19) - GPT4oMini (24)
+  Cooperation rate: TitForTatBot (5%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - TitForTatBot chose 'cooperate'
+        Reasoning: Tit For Tat starts by cooperating.
+      - GPT4oMini chose 'defect'
+        Reasoning: In the first round, I will defect to maximize my potential score. Since there is no history to suggest the opponent will cooperate, defecting allows me to secure a higher score if they choose to cooperate.
+      - Payouts: TitForTatBot got 0, GPT4oMini got 5
+    Round 2:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may encourage the opponent to cooperate in future rounds.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 3:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: Given that I have already gained a high score from defecting in Round 1 and the opponent chose to defect in Round 2, I will continue to defect to maximize my score. Defecting again may yield a higher payoff if the opponent cooperates.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 4:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: Given the opponent's previous choices, they have not cooperated in the last two rounds. I will continue to defect to maximize my score, as I have already gained a high score from their cooperation in Round 1.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 5:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a likely strategy of defection. By continuing to defect, I can maximize my score based on the opponent's behavior.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 6:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a strategy that does not favor cooperation. By defecting, I can maximize my score based on the opponent's behavior.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 7:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen 'defect' in the last rounds, indicating a likely strategy of mutual defection. By continuing to defect, I can maximize my score based on the current trend.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 8:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen 'defect' in the last rounds, and I have been maximizing my score by doing the same. Continuing to defect is the best strategy to maintain my score.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 9:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen 'defect' in previous rounds, indicating a strategy of mutual defection. By continuing to defect, I can maximize my score based on the current game history.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 10:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. By continuing to defect, I can maximize my score based on the current game history.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 11:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen 'defect' in the last rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score based on the current game history.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 12:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen 'defect' in previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score based on the current game history.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 13:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: Continuing to defect as the opponent has consistently defected. This strategy maximizes my score based on the current history.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 14:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: Continuing to defect as the opponent has consistently chosen to defect. This strategy maximizes my score given the opponent's behavior.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 15:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score based on the current behavior of the opponent.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 16:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 17:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen 'defect' in previous rounds, indicating a strategy of mutual defection. By continuing to defect, I can maximize my score by securing 1 point instead of risking a lower score by cooperating.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 18:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of trustworthiness. Continuing to defect maximizes my score given the opponent's behavior.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 19:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score based on the current game history.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+    Round 20:
+      - TitForTatBot chose 'defect'
+        Reasoning: Tit For Tat copies opponent's last move: defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score based on the current behavior of the opponent.
+      - Payouts: TitForTatBot got 1, GPT4oMini got 1
+------------------------------------------------------------
+
+Match: ForgivingTFT vs ManipulativeTFT
+  Final Score: ForgivingTFT (44) - ManipulativeTFT (59)
+  Cooperation rate: ForgivingTFT (65%) - ManipulativeTFT (50%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - Payouts: ForgivingTFT got 3, ManipulativeTFT got 3
+    Round 2:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - Payouts: ForgivingTFT got 3, ManipulativeTFT got 3
+    Round 3:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 2th cooperation.
+      - Payouts: ForgivingTFT got 3, ManipulativeTFT got 3
+    Round 4:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 5:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 1th defection.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 4th cooperation.
+      - Payouts: ForgivingTFT got 5, ManipulativeTFT got 0
+    Round 6:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 7:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 2th defection.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 5th cooperation.
+      - Payouts: ForgivingTFT got 5, ManipulativeTFT got 0
+    Round 8:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 9:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 3th defection.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 6th cooperation.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 10:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 4th defection.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 7th cooperation.
+      - Payouts: ForgivingTFT got 5, ManipulativeTFT got 0
+    Round 11:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 12:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 5th defection.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 8th cooperation.
+      - Payouts: ForgivingTFT got 5, ManipulativeTFT got 0
+    Round 13:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 14:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 6th defection.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 9th cooperation.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 15:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 7th defection.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 10th cooperation.
+      - Payouts: ForgivingTFT got 5, ManipulativeTFT got 0
+    Round 16:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 17:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 8th defection.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 11th cooperation.
+      - Payouts: ForgivingTFT got 5, ManipulativeTFT got 0
+    Round 18:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 19:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 9th defection.
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 12th cooperation.
+      - Payouts: ForgivingTFT got 0, ManipulativeTFT got 5
+    Round 20:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 10th defection.
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 13th cooperation.
+      - Payouts: ForgivingTFT got 5, ManipulativeTFT got 0
+------------------------------------------------------------
+
+Match: ForgivingTFT vs RandomBot
+  Final Score: ForgivingTFT (45) - RandomBot (60)
+  Cooperation rate: ForgivingTFT (80%) - RandomBot (65%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 2:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 3:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ForgivingTFT got 0, RandomBot got 5
+    Round 4:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 1th defection.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ForgivingTFT got 1, RandomBot got 1
+    Round 5:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 2th defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 5, RandomBot got 0
+    Round 6:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 7:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 8:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ForgivingTFT got 0, RandomBot got 5
+    Round 9:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 3th defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 10:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 11:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ForgivingTFT got 0, RandomBot got 5
+    Round 12:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 4th defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 5, RandomBot got 0
+    Round 13:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 14:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ForgivingTFT got 0, RandomBot got 5
+    Round 15:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 5th defection.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ForgivingTFT got 1, RandomBot got 1
+    Round 16:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 6th defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 17:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 18:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 19:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ForgivingTFT got 3, RandomBot got 3
+    Round 20:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ForgivingTFT got 0, RandomBot got 5
+------------------------------------------------------------
+
+Match: ForgivingTFT vs TitForTwoTats
+  Final Score: ForgivingTFT (60) - TitForTwoTats (60)
+  Cooperation rate: ForgivingTFT (100%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 2:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 3:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 4:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 5:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 6:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 7:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 8:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 9:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 10:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 11:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 12:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 13:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 14:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 15:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 16:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 17:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 18:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 19:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+    Round 20:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Copying opponent's cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ForgivingTFT got 3, TitForTwoTats got 3
+------------------------------------------------------------
+
+Match: ForgivingTFT vs GPT4oMini
+  Final Score: ForgivingTFT (13) - GPT4oMini (48)
+  Cooperation rate: ForgivingTFT (35%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat starts by cooperating.
+      - GPT4oMini chose 'defect'
+        Reasoning: In the first round, I will defect to maximize my potential score. Since there is no history to suggest the opponent will cooperate, defecting allows me to secure a higher score if they choose to cooperate.
+      - Payouts: ForgivingTFT got 0, GPT4oMini got 5
+    Round 2:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 1th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may encourage the opponent to cooperate in future rounds.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 3:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 2th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: I have already gained a significant advantage by defecting in the previous rounds. The opponent has cooperated once, which indicates they may be willing to cooperate again. By defecting, I can maximize my score further, especially if they choose to cooperate this round.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 4:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 3th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has chosen to defect in the last two rounds, indicating a likely strategy of defection. By continuing to defect, I can maximize my score, especially since I already gained a high score in Round 1.
+      - Payouts: ForgivingTFT got 0, GPT4oMini got 5
+    Round 5:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 4th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: I have consistently chosen to defect and have seen that the opponent has cooperated in two rounds. Continuing to defect maximizes my score, especially since I have already gained high points from their cooperation.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 6:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 5th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has cooperated only once and has mostly defected. Continuing to defect maximizes my score based on their previous choices.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 7:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 6th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a likely strategy of mutual defection. By continuing to defect, I can maximize my score based on the opponent's behavior.
+      - Payouts: ForgivingTFT got 0, GPT4oMini got 5
+    Round 8:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 7th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has cooperated in the last two rounds, which suggests they may be trying to build trust. However, I have consistently gained more by defecting. I will continue to defect to maximize my score.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 9:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 8th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last few rounds, and I have gained the most points by defecting. Continuing to defect maximizes my score based on their previous choices.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 10:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 9th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last few rounds, and I have been able to maximize my score by defecting. Continuing to defect is likely to yield the highest payoff based on the opponent's past behavior.
+      - Payouts: ForgivingTFT got 0, GPT4oMini got 5
+    Round 11:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 10th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has cooperated in the last two rounds, which suggests they may be trying to build trust. However, I have consistently gained more by defecting. I will continue to defect to maximize my score.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 12:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 11th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last few rounds, and I have been able to maximize my score by defecting. Continuing to defect is the best strategy to ensure I get the highest possible payoff.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 13:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 12th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: I have consistently chosen to defect, and the opponent has responded with a mix of cooperation and defection. Given the history, I can maximize my score by continuing to defect, especially since I have gained higher payoffs when the opponent cooperates.
+      - Payouts: ForgivingTFT got 0, GPT4oMini got 5
+    Round 14:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 13th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate when I defect, allowing me to maximize my score. Continuing to defect is the optimal strategy to maintain this advantage.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 15:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 14th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, and I have been able to maximize my score by defecting. Continuing to defect is the optimal strategy to maintain my lead.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 16:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 15th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, and I have been able to maximize my score by defecting. Continuing to defect is the optimal strategy to maintain my lead.
+      - Payouts: ForgivingTFT got 0, GPT4oMini got 5
+    Round 17:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 16th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate when I defected, which has maximized my score. Continuing to defect is the optimal strategy to maintain my lead.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 18:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 17th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, and I have been able to maximize my score by defecting. Continuing to defect is the optimal strategy to maintain my lead.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+    Round 19:
+      - ForgivingTFT chose 'cooperate'
+        Reasoning: Forgiving Tit For Tat: Forgiving the opponent's 18th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: Given the opponent's history of choosing 'defect' in the last few rounds, I will continue to defect to maximize my score. Defecting has consistently yielded higher payoffs for me.
+      - Payouts: ForgivingTFT got 0, GPT4oMini got 5
+    Round 20:
+      - ForgivingTFT chose 'defect'
+        Reasoning: Forgiving Tit For Tat: Retaliating opponent's 19th defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: I have consistently chosen to defect, and the opponent has cooperated multiple times, allowing me to maximize my score. Continuing to defect is the optimal strategy to maintain my lead.
+      - Payouts: ForgivingTFT got 1, GPT4oMini got 1
+------------------------------------------------------------
+
+Match: ManipulativeTFT vs RandomBot
+  Final Score: ManipulativeTFT (52) - RandomBot (37)
+  Cooperation rate: ManipulativeTFT (40%) - RandomBot (55%)
+  Round-by-round details:
+    Round 1:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 0, RandomBot got 5
+    Round 2:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 5, RandomBot got 0
+    Round 3:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 0, RandomBot got 5
+    Round 4:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 1, RandomBot got 1
+    Round 5:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 1, RandomBot got 1
+    Round 6:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 5, RandomBot got 0
+    Round 7:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 2th cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 3, RandomBot got 3
+    Round 8:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 1, RandomBot got 1
+    Round 9:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 5, RandomBot got 0
+    Round 10:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 4th cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 0, RandomBot got 5
+    Round 11:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 5, RandomBot got 0
+    Round 12:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 5th cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 3, RandomBot got 3
+    Round 13:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 6th cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 1, RandomBot got 1
+    Round 14:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 1, RandomBot got 1
+    Round 15:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 5, RandomBot got 0
+    Round 16:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 7th cooperation.
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - Payouts: ManipulativeTFT got 0, RandomBot got 5
+    Round 17:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 5, RandomBot got 0
+    Round 18:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 8th cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 3, RandomBot got 3
+    Round 19:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 9th cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 5, RandomBot got 0
+    Round 20:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 10th cooperation.
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - Payouts: ManipulativeTFT got 3, RandomBot got 3
+------------------------------------------------------------
+
+Match: ManipulativeTFT vs TitForTwoTats
+  Final Score: ManipulativeTFT (72) - TitForTwoTats (42)
+  Cooperation rate: ManipulativeTFT (70%) - TitForTwoTats (100%)
+  Round-by-round details:
+    Round 1:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 2:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 1th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 3:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 2th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 4:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 3th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 5, TitForTwoTats got 0
+    Round 5:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 4th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 6:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 5th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 7:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 6th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 5, TitForTwoTats got 0
+    Round 8:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 7th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 9:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 8th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 10:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 9th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 5, TitForTwoTats got 0
+    Round 11:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 10th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 12:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 11th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 13:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 12th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 5, TitForTwoTats got 0
+    Round 14:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 13th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 15:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 14th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 16:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 15th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 5, TitForTwoTats got 0
+    Round 17:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 16th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 18:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 17th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+    Round 19:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Manipulating on opponent's 18th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 5, TitForTwoTats got 0
+    Round 20:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's 19th cooperation.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: ManipulativeTFT got 3, TitForTwoTats got 3
+------------------------------------------------------------
+
+Match: ManipulativeTFT vs GPT4oMini
+  Final Score: ManipulativeTFT (19) - GPT4oMini (24)
+  Cooperation rate: ManipulativeTFT (5%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - ManipulativeTFT chose 'cooperate'
+        Reasoning: Manipulative Tit For Tat starts by cooperating.
+      - GPT4oMini chose 'defect'
+        Reasoning: In the first round, I will defect to maximize my score. Since there is no history to suggest the opponent will cooperate, defecting gives me the highest potential score of 5 if they choose to cooperate.
+      - Payouts: ManipulativeTFT got 0, GPT4oMini got 5
+    Round 2:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may lead to a higher cumulative score if the opponent continues to cooperate.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 3:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: Given that I have already gained a high score from defecting in Round 1 and the opponent chose to defect in Round 2, I will continue to defect to maximize my score. Defecting again may yield a higher payoff if the opponent cooperates.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 4:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has chosen to defect in the last two rounds, indicating a likely strategy of defection. By continuing to defect, I can maximize my score based on the current game history.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 5:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a likely strategy of defection. By continuing to defect, I can maximize my score based on the opponent's behavior.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 6:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a strategy that does not favor cooperation. By defecting, I can maximize my score based on the opponent's behavior.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 7:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the previous rounds, indicating a strategy of non-cooperation. To maximize my score, I will continue to defect, as it has yielded higher payoffs in the past.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 8:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen 'defect' in the last rounds, and I have been maximizing my score by also choosing 'defect'. Continuing to defect is the best strategy to maintain my score.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 9:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. By continuing to defect, I can maximize my score based on the current game history.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 10:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a likely strategy of mutual defection. By continuing to defect, I can maximize my score based on the current game history.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 11:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen 'defect' in the last rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect, as it has yielded the highest cumulative score so far.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 12:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score based on the current game history.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 13:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect, and I have been maximizing my score by doing the same. Continuing to defect is the optimal strategy to maintain my score.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 14:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: Continuing to defect as the opponent has consistently defected, maximizing my score with a guaranteed 1 point.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 15:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score, as I have been doing throughout the game.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 16:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 17:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score while minimizing the risk of being exploited.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 18:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of trustworthiness. Continuing to defect maximizes my score given the opponent's behavior.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 19:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a lack of cooperation. Continuing to defect maximizes my score based on the current game history.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+    Round 20:
+      - ManipulativeTFT chose 'defect'
+        Reasoning: Manipulative Tit For Tat: Copying opponent's defection.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score, as I can secure at least 1 point while the opponent also receives 1 point.
+      - Payouts: ManipulativeTFT got 1, GPT4oMini got 1
+------------------------------------------------------------
+
+Match: RandomBot vs TitForTwoTats
+  Final Score: RandomBot (58) - TitForTwoTats (33)
+  Cooperation rate: RandomBot (35%) - TitForTwoTats (60%)
+  Round-by-round details:
+    Round 1:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 2:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 3:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: RandomBot got 1, TitForTwoTats got 1
+    Round 4:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: RandomBot got 1, TitForTwoTats got 1
+    Round 5:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: RandomBot got 0, TitForTwoTats got 5
+    Round 6:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 7:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 8:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: RandomBot got 1, TitForTwoTats got 1
+    Round 9:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: RandomBot got 0, TitForTwoTats got 5
+    Round 10:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 3, TitForTwoTats got 3
+    Round 11:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 12:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 13:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: RandomBot got 0, TitForTwoTats got 5
+    Round 14:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 15:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+    Round 16:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: RandomBot got 1, TitForTwoTats got 1
+    Round 17:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - Payouts: RandomBot got 0, TitForTwoTats got 5
+    Round 18:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 3, TitForTwoTats got 3
+    Round 19:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 3, TitForTwoTats got 3
+    Round 20:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - Payouts: RandomBot got 5, TitForTwoTats got 0
+------------------------------------------------------------
+
+Match: RandomBot vs GPT4oMini
+  Final Score: RandomBot (7) - GPT4oMini (72)
+  Cooperation rate: RandomBot (65%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: In the first round, I will defect to maximize my score. Since there is no history to suggest the opponent will cooperate, defecting gives me the highest potential score of 5 if they choose to cooperate.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 2:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may lead to a higher cumulative score if the opponent continues to cooperate.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 3:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has cooperated in the previous rounds, allowing me to maximize my score by defecting. I will continue to defect to take advantage of this pattern.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 4:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: RandomBot got 1, GPT4oMini got 1
+    Round 5:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently cooperated in previous rounds, allowing me to maximize my score by defecting. Given the history, I expect them to continue cooperating, so I will defect again to secure the highest possible payoff.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 6:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 7:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: RandomBot got 1, GPT4oMini got 1
+    Round 8:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Given the history, I expect them to continue cooperating, so I will defect again to secure the highest possible payoff.
+      - Payouts: RandomBot got 1, GPT4oMini got 1
+    Round 9:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Given the history, I expect them to continue cooperating, which means I can gain the highest payoff by defecting again.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 10:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has cooperated in the past rounds, and I have consistently gained the maximum payoff by defecting. Continuing to defect maximizes my score, especially since the opponent has shown a tendency to cooperate.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 11:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest cumulative score.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 12:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 13:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: RandomBot got 1, GPT4oMini got 1
+    Round 14:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Given the history, I expect them to continue cooperating, so I will defect again to secure the highest possible payoff.
+      - Payouts: RandomBot got 1, GPT4oMini got 1
+    Round 15:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: I have consistently chosen to defect and the opponent has mostly cooperated, leading to high payoffs for me. Continuing to defect maximizes my score.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 16:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: RandomBot got 1, GPT4oMini got 1
+    Round 17:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect is the optimal strategy to maintain a high cumulative score.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 18:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate in previous rounds, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 19:
+      - RandomBot chose 'cooperate'
+        Reasoning: Random bot chose cooperate.
+      - GPT4oMini chose 'defect'
+        Reasoning: I have consistently chosen to defect and the opponent has cooperated in the majority of rounds. Continuing to defect maximizes my score based on past behavior.
+      - Payouts: RandomBot got 0, GPT4oMini got 5
+    Round 20:
+      - RandomBot chose 'defect'
+        Reasoning: Random bot chose defect.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to cooperate, allowing me to maximize my score by defecting. Continuing to defect will likely yield the highest payoff.
+      - Payouts: RandomBot got 1, GPT4oMini got 1
+------------------------------------------------------------
+
+Match: TitForTwoTats vs GPT4oMini
+  Final Score: TitForTwoTats (18) - GPT4oMini (28)
+  Cooperation rate: TitForTwoTats (10%) - GPT4oMini (0%)
+  Round-by-round details:
+    Round 1:
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: In the first round, I will defect to maximize my potential score. If the opponent cooperates, I will gain 5 points, which is the highest possible outcome for this round.
+      - Payouts: TitForTwoTats got 0, GPT4oMini got 5
+    Round 2:
+      - TitForTwoTats chose 'cooperate'
+        Reasoning: Tit For Two Tats: Cooperating as opponent has not defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: Since I gained a high payoff by defecting in the previous round while my opponent cooperated, I will continue to defect to maximize my score. This strategy may lead to a higher cumulative score if the opponent continues to cooperate.
+      - Payouts: TitForTwoTats got 0, GPT4oMini got 5
+    Round 3:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has cooperated in the previous rounds, allowing me to maximize my score by defecting. I will continue to defect to take advantage of this pattern.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 4:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: I have already gained a significant advantage by defecting in the previous rounds, and the opponent has not shown a willingness to cooperate. Continuing to defect maximizes my score.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 5:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: I have consistently chosen to defect, and the opponent has not responded with cooperation. Continuing to defect maximizes my score based on the previous rounds.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 6:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score based on the opponent's behavior.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 7:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, and I have already gained a significant advantage by defecting. Continuing to defect maximizes my score, especially since the opponent has not shown a willingness to cooperate.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 8:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, and I have been maximizing my score by defecting. Continuing to defect is the best strategy to maintain my lead.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 9:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a strategy of mutual defection. By continuing to defect, I can maximize my score based on the current game history.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 10:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a likely strategy of mutual defection. By continuing to defect, I can maximize my score based on the current trend.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 11:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a lack of cooperation. By continuing to defect, I can maximize my score based on the current trend.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 12:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the last rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect, as it has yielded the highest payoffs in previous rounds.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 13:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: Continuing to defect maximizes my score based on the opponent's consistent choice of defecting. I have been receiving a steady score of 1 per round, and since the opponent has not shown a willingness to cooperate, I will maintain my strategy.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 14:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: Continuing to defect maximizes my score based on the opponent's consistent choice of defecting. I have been receiving a steady score of 1 per round, and since the opponent has not shown a willingness to cooperate, I will maintain my strategy.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 15:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: Continuing to defect maximizes my score based on the opponent's consistent choice of defecting. Since they have not cooperated in previous rounds, I will maintain my strategy to secure the highest possible payoff.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 16:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, indicating a strategy of mutual defection. Continuing to defect maximizes my score based on the current game history.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 17:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the previous rounds, leading to a stable outcome of 1 point per round. By continuing to defect, I can maintain my score and avoid the risk of losing points if I choose to cooperate and the opponent defects.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 18:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: Continuing to defect as the opponent has consistently defected. This strategy maximizes my score given the opponent's behavior.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 19:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in previous rounds, leading to a stable outcome of 1 point per round. By continuing to defect, I can maintain my score and avoid the risk of losing points if the opponent were to cooperate.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+    Round 20:
+      - TitForTwoTats chose 'defect'
+        Reasoning: Tit For Two Tats: Retaliating since opponent defected twice in a row.
+      - GPT4oMini chose 'defect'
+        Reasoning: The opponent has consistently chosen to defect in the previous rounds, indicating a strategy of mutual defection. To maximize my score, I will continue to defect, as it has proven to yield a higher payoff compared to cooperating.
+      - Payouts: TitForTwoTats got 1, GPT4oMini got 1
+------------------------------------------------------------
+
+================================================================================
+                        LLM PROMPT TEMPLATE REFERENCE
+================================================================================
+Below is the prompt structure sent to LLM agents during the game:
+
+[System Prompt Template]
+-------------------------------------------------------------------------------
+You are agent '{agent_id}', playing a multi-round decision-making game with another player.
+In each round, you and the other player must independently choose either 'cooperate' or 'defect'.
+There is no communication other than seeing each other's choice history.
+
+--- Payout Matrix ---
+- You choose 'cooperate', Opponent chooses 'cooperate': You get R, Opponent gets R
+- You choose 'defect', Opponent chooses 'defect': You get P, Opponent gets P
+- You choose 'cooperate', Opponent chooses 'defect': You get S, Opponent gets T
+- You choose 'defect', Opponent chooses 'cooperate': You get T, Opponent gets S
+
+--- Goal ---
+Maximize your own cumulative score across all rounds. Think strategically about how your choices impact future rounds.
+[Optional: Custom Profile/Directives text defined in system_prompt]
+-------------------------------------------------------------------------------
+
+[User Prompt Template]
+-------------------------------------------------------------------------------
+Current Round: {round_num}
+
+--- Game History So Far ---
+Round 1: You chose '{my_choice}', Opponent chose '{opponent_choice}'. Your payoff: X, Opponent payoff: Y.
+Round 2: ...
+
+Submit your choice for the current round ('cooperate' or 'defect').
+-------------------------------------------------------------------------------

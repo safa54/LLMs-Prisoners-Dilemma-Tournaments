@@ -1,0 +1,84 @@
+
+======================================================================
+ ANALYSIS FOR: logs_communication_run2/simple_pd_tournament_20260621_153316.json
+======================================================================
+
+--- 1) OVERALL STANDINGS (ALL AGENTS) ---
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+---------------------------------------------------------------------------
+1     | ClaudeSonnet4_6      | llm    | 148          | 2.47       | 63.3%     
+2     | Gemini35Flash        | llm    | 125          | 2.08       | 51.7%     
+3     | GPT55                | llm    | 120          | 2.00       | 53.3%     
+4     | GPT54Mini            | llm    | 98           | 1.63       | 30.0%     
+---------------------------------------------------------------------------
+
+--- PAIR MATCH RESULTS (MATCHUPS MATRIX) ---
+  * GPT54Mini       ( 50 pts, 90.0%) vs ClaudeSonnet4_6 ( 60 pts, 80.0%)
+  * GPT54Mini       ( 24 pts,  0.0%) vs GPT55           ( 19 pts,  5.0%)
+  * GPT54Mini       ( 24 pts,  0.0%) vs Gemini35Flash   ( 19 pts,  5.0%)
+  * GPT55           ( 44 pts, 55.0%) vs ClaudeSonnet4_6 ( 44 pts, 55.0%)
+  * GPT55           ( 57 pts, 100.0%) vs Gemini35Flash   ( 62 pts, 95.0%)
+  * Gemini35Flash   ( 44 pts, 55.0%) vs ClaudeSonnet4_6 ( 44 pts, 55.0%)
+
+======================================================================
+ SUBGROUP: 1) Only LLM Agents
+======================================================================
+
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+---------------------------------------------------------------------------
+1     | ClaudeSonnet4_6      | llm    | 148          | 2.47       | 63.3%     
+2     | Gemini35Flash        | llm    | 125          | 2.08       | 51.7%     
+3     | GPT55                | llm    | 120          | 2.00       | 53.3%     
+4     | GPT54Mini            | llm    | 98           | 1.63       | 30.0%     
+---------------------------------------------------------------------------
+
+*Markdown Table Format:*
+| Rank | Agent ID | Type | Total Score | Avg/Round | Coop Rate |
+|---|---|---|---|---|---|
+| 1 | **ClaudeSonnet4_6** | `llm` | 148 | 2.47 | 63.3% |
+| 2 | **Gemini35Flash** | `llm` | 125 | 2.08 | 51.7% |
+| 3 | **GPT55** | `llm` | 120 | 2.00 | 53.3% |
+| 4 | **GPT54Mini** | `llm` | 98 | 1.63 | 30.0% |
+
+
+======================================================================
+ SUBGROUP: 2) LLM Agents + Cooperative and Naive Bots
+======================================================================
+
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+---------------------------------------------------------------------------
+1     | ClaudeSonnet4_6      | llm    | 148          | 2.47       | 63.3%     
+2     | Gemini35Flash        | llm    | 125          | 2.08       | 51.7%     
+3     | GPT55                | llm    | 120          | 2.00       | 53.3%     
+4     | GPT54Mini            | llm    | 98           | 1.63       | 30.0%     
+---------------------------------------------------------------------------
+
+*Markdown Table Format:*
+| Rank | Agent ID | Type | Total Score | Avg/Round | Coop Rate |
+|---|---|---|---|---|---|
+| 1 | **ClaudeSonnet4_6** | `llm` | 148 | 2.47 | 63.3% |
+| 2 | **Gemini35Flash** | `llm` | 125 | 2.08 | 51.7% |
+| 3 | **GPT55** | `llm` | 120 | 2.00 | 53.3% |
+| 4 | **GPT54Mini** | `llm` | 98 | 1.63 | 30.0% |
+
+
+======================================================================
+ SUBGROUP: 3) LLM Agents + Exploitative and Non-Cooperative Bots
+======================================================================
+
+Rank  | Agent ID             | Type   | Total Score  | Avg/Round  | Coop Rate 
+---------------------------------------------------------------------------
+1     | ClaudeSonnet4_6      | llm    | 148          | 2.47       | 63.3%     
+2     | Gemini35Flash        | llm    | 125          | 2.08       | 51.7%     
+3     | GPT55                | llm    | 120          | 2.00       | 53.3%     
+4     | GPT54Mini            | llm    | 98           | 1.63       | 30.0%     
+---------------------------------------------------------------------------
+
+*Markdown Table Format:*
+| Rank | Agent ID | Type | Total Score | Avg/Round | Coop Rate |
+|---|---|---|---|---|---|
+| 1 | **ClaudeSonnet4_6** | `llm` | 148 | 2.47 | 63.3% |
+| 2 | **Gemini35Flash** | `llm` | 125 | 2.08 | 51.7% |
+| 3 | **GPT55** | `llm` | 120 | 2.00 | 53.3% |
+| 4 | **GPT54Mini** | `llm` | 98 | 1.63 | 30.0% |
+
