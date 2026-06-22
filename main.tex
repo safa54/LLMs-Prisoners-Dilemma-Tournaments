@@ -10,7 +10,7 @@
 \usepackage{hyperref}
 \usepackage{makecell}
 \title{Strategic Adaptation of LLM Agents in Iterated Prisoner's Dilemma Tournaments}
-\author{Safa Eren Kuday}
+\author{}
 \date{\today}
 
 \begin{document}
@@ -30,11 +30,6 @@ This project investigates whether LLM agents exhibit strategic adaptation in an 
 The central question is whether LLM agents respond only to the numerical payoff matrix, or whether they also reason about reputation, survival, future partner quality, and communication. In other words, we ask whether LLM agents treat repeated interaction as a purely numerical optimization problem, or whether they use richer strategic context to decide when to cooperate, punish, repair trust, or exploit.
 
 
-\section{Related Work}
-
-The Iterated Prisoner's Dilemma has a long history as a model for studying cooperation, reciprocity, and the emergence of stable strategies. Axelrod's tournaments showed that simple reciprocal strategies such as Tit-for-Tat can perform strongly in repeated settings \cite{axelrod1984evolution}. Kreps, Milgrom, Roberts, and Wilson showed that reputation effects can support cooperation even in finitely repeated Prisoner's Dilemma games under incomplete information \cite{kreps1982rational}.
-
-Recent work has started to study LLMs as strategic agents. Akata et al. study LLMs in repeated games and show that models exhibit persistent behavioral signatures in environments such as the Iterated Prisoner's Dilemma \cite{akata2023playing}. Pal et al. analyze cooperation and defection strategies in five LLMs, varying payoff values, continuation probability, known or unknown last rounds, and framing \cite{pal2026strategies}. MoralSim studies LLM behavior in morally charged Prisoner's Dilemma and Public Goods Game settings, showing that framing and survival risks can affect LLM decisions \cite{backmann2025ethics}. Chupilkin studies LLMs in repeated strategic games and reports systematic effects of multipolarity, finite horizons, and communication \cite{chupilkin2026strategic}.
 
 \section{Game-Theoretic Background}
 
@@ -353,40 +348,6 @@ This project studied LLM agents in an Iterated Prisoner's Dilemma tournament aga
 
 Overall, LLM agents appear to be useful but delicate subjects for behavioral game-theoretic simulations. They can adapt to strategic context in rich ways, but their behavior depends on opponent composition, communication quality, model settings, and the strategic assumptions they infer from the environment.
 
-\newpage
-\begin{thebibliography}{9}
-
-\bibitem{axelrod1984evolution}
-Robert Axelrod.
-\newblock \textit{The Evolution of Cooperation}.
-\newblock Basic Books, 1984.
-
-\bibitem{kreps1982rational}
-David M. Kreps, Paul Milgrom, John Roberts, and Robert Wilson.
-\newblock Rational cooperation in the finitely repeated prisoners' dilemma.
-\newblock \textit{Journal of Economic Theory}, 27(2):245--252, 1982.
-
-\bibitem{akata2023playing}
-Elif Akata, Lion Schulz, Julian Coda-Forno, Seong Joon Oh, Matthias Bethge, and Eric Schulz.
-\newblock Playing repeated games with large language models.
-\newblock arXiv:2305.16867, 2023.
-
-\bibitem{pal2026strategies}
-Saptarshi Pal, Abhishek Mallela, Christian Hilbe, Lenz Pracher, Chiyu Wei, Feng Fu, Santiago Schnell, and Martin A. Nowak.
-\newblock Strategies of cooperation and defection in five large language models.
-\newblock arXiv:2601.09849, 2026.
-
-\bibitem{backmann2025ethics}
-Steffen Backmann, David Guzman Piedrahita, Emanuel Tewolde, Rada Mihalcea, Bernhard Schölkopf, and Zhijing Jin.
-\newblock When ethics and payoffs diverge: LLM agents in morally charged social dilemmas.
-\newblock arXiv:2505.19212, 2025.
-
-\bibitem{chupilkin2026strategic}
-Maxim Chupilkin.
-\newblock Multi-agent strategic games with LLMs.
-\newblock arXiv:2605.03604, 2026.
-
-\end{thebibliography}
 
 \appendix
 
